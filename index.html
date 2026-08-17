@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Красивая Ты — студия Натальи Манохиной в Раменском</title>
+  <meta name="description" content="Студия красоты Натальи Манохиной в Раменском: перманентный макияж, аппаратная и инъекционная косметология, лазерная эпиляция, ногтевой сервис. Все 153 цены открыто на сайте.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#140D0A">
+
+  <!-- TODO: домен ещё не подтверждён — при деплое заменить krasivaya-ty.asama.site на реальный -->
+  <meta property="og:url" content="https://krasivaya-ty.asama.site/">
+  <meta property="og:site_name" content="Красивая Ты">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Красивая Ты — студия Натальи Манохиной в Раменском">
+  <meta property="og:description" content="Перманентный макияж, аппаратная и инъекционная косметология, лазерная эпиляция, ногтевой сервис. Все 153 цены открыто на сайте.">
+  <meta property="og:image" content="https://krasivaya-ty.asama.site/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Красивая Ты — студия Натальи Манохиной в Раменском">
+  <meta name="twitter:description" content="Перманентный макияж, аппаратная и инъекционная косметология, лазерная эпиляция, ногтевой сервис. Все 153 цены открыто на сайте.">
+  <meta name="twitter:image" content="https://krasivaya-ty.asama.site/og-image.png">
+
+  <link rel="icon" href="assets/images/logo-krasivaya-ti.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Marck+Script&display=swap">
+  <link rel="preload" as="image" href="assets/images/natalia-portrait.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Дуотон для фотографий: тени уходят в шоколад, света — в персик -->
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <filter id="warm" color-interpolation-filters="sRGB">
+    <feColorMatrix type="matrix" values="0.299 0.587 0.114 0 0
+                                         0.299 0.587 0.114 0 0
+                                         0.299 0.587 0.114 0 0
+                                         0     0     0     1 0"/>
+    <feComponentTransfer>
+      <feFuncR type="table" tableValues="0.09 0.97"/>
+      <feFuncG type="table" tableValues="0.055 0.79"/>
+      <feFuncB type="table" tableValues="0.042 0.63"/>
+    </feComponentTransfer>
+  </filter>
+</svg>
+
+<a class="skip" href="#main">Перейти к содержанию</a>
+
+<header class="hdr" id="top">
+  <a class="brand" href="#top">
+    <span class="brand__text">
+      <span class="brand__script">Красивая&nbsp;Ты</span>
+      <span class="brand__sub">Студия Натальи Манохиной</span>
+    </span>
+  </a>
+
+  <nav class="nav" aria-label="Основная навигация">
+    <a href="#napravleniya">Направления</a>
+    <a href="#price">Цены</a>
+    <a href="#studio">Студия</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+
+  <a class="tel" href="tel:+79651952277">+7 965 195-22-77</a>
+  <a class="btn btn--sm" href="https://n478417.yclients.com/" target="_blank" rel="noopener">Записаться</a>
+</header>
+
+<main id="main">
+
+  <!-- 1. ПЕРВЫЙ ЭКРАН — шоколад -->
+  <section class="hero surf surf--noir">
+    <div class="hero__light" aria-hidden="true"></div>
+
+    <div class="hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow">Раменское · Высоковольтная, 22</p>
+        <p class="script">Красивая Ты</p>
+        <h1 class="hero__title">Студия красоты<br>Натальи Манохиной</h1>
+        <p class="hero__lead">
+          Перманентный макияж, аппаратная косметология, ногтевой сервис и уход за телом —
+          восемь направлений в одном пространстве. Все&nbsp;153&nbsp;цены открыто на сайте.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn" href="https://n478417.yclients.com/" target="_blank" rel="noopener">Записаться онлайн</a>
+          <a class="link" href="#price">Смотреть цены</a>
+        </div>
+
+        <p class="hero__offer">Бесплатный подбор уходовых средств на консультации</p>
+      </div>
+
+      <figure class="hero__figure">
+        <div class="arch">
+          <img class="arch__img" src="assets/images/natalia-portrait.jpg"
+               alt="Наталья Манохина — основательница студии «Красивая Ты»"
+               width="420" height="703" fetchpriority="high">
+        </div>
+
+        <div class="seal">
+          <span class="seal__score">5,0</span>
+          <span class="seal__stars" aria-hidden="true">★★★★★</span>
+          <span class="seal__label">234 оценки<br>на Яндекс Картах</span>
+        </div>
+
+        <figcaption class="hero__badge">
+          <b>Хорошее место</b>
+          <span>Яндекс Карты</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 2. БЕГУЩАЯ СТРОКА — персик -->
+  <div class="ticker" aria-label="Направления студии">
+    <div class="ticker__track">
+      <span class="ticker__set">
+        Перманентный макияж <i>✦</i> Аппаратная косметология <i>✦</i> Ногтевой сервис <i>✦</i>
+        Лазерная эпиляция <i>✦</i> Инъекционная косметология <i>✦</i> Брови и ресницы <i>✦</i>
+        Аппаратные массажи <i>✦</i> Удаление татуажа <i>✦</i>
+      </span>
+      <span class="ticker__set" aria-hidden="true">
+        Перманентный макияж <i>✦</i> Аппаратная косметология <i>✦</i> Ногтевой сервис <i>✦</i>
+        Лазерная эпиляция <i>✦</i> Инъекционная косметология <i>✦</i> Брови и ресницы <i>✦</i>
+        Аппаратные массажи <i>✦</i> Удаление татуажа <i>✦</i>
+      </span>
+    </div>
+  </div>
+
+  <!-- 3. НАПРАВЛЕНИЯ — коричневый -->
+  <section class="dirs surf surf--cocoa" id="napravleniya">
+    <div class="dirs__grid">
+      <div class="dirs__aside">
+        <p class="eyebrow">Всё в одном пространстве</p>
+        <h2 class="h2">Восемь<br><em>направлений</em></h2>
+        <p class="dirs__text">
+          Не нужно ездить по разным мастерам: чистка лица, маникюр, лазер и инъекции —
+          в одной студии, у своих специалистов.
+        </p>
+
+        <figure class="photo photo--warm">
+          <img src="assets/images/salon-02.webp" alt="Мастер студии работает над формой бровей" loading="lazy" width="1280" height="853">
+        </figure>
+      </div>
+
+      <ul class="dirs__list">
+        <li class="dir">
+          <span class="dir__name">Перманентный макияж</span>
+          <span class="dir__desc">Брови, губы, межресничка, стрелки, коррекция и рефреш</span>
+          <span class="dir__count">15 процедур</span>
+        </li>
+        <li class="dir">
+          <span class="dir__name">Аппаратная косметология</span>
+          <span class="dir__desc">RF-лифтинг, фотоомоложение, холодная плазма, микротоки</span>
+          <span class="dir__count">29 процедур</span>
+        </li>
+        <li class="dir">
+          <span class="dir__name">Инъекционная косметология</span>
+          <span class="dir__desc">Биоревитализация, липолитики, ботулинотерапия, контур губ</span>
+          <span class="dir__count">26 процедур</span>
+        </li>
+        <li class="dir">
+          <span class="dir__name">Лазерная эпиляция</span>
+          <span class="dir__desc">Отдельные зоны и комплексы, вплоть до «всё тело»</span>
+          <span class="dir__count">23 процедуры</span>
+        </li>
+        <li class="dir">
+          <span class="dir__name">Ногтевой сервис</span>
+          <span class="dir__desc">Маникюр, педикюр, наращивание, мужской сервис</span>
+          <span class="dir__count">22 процедуры</span>
+        </li>
+        <li class="dir">
+          <span class="dir__name">Эстетическая косметология</span>
+          <span class="dir__desc">Чистки, пилинги, брови и ресницы, уход по типу кожи</span>
+          <span class="dir__count">20 процедур</span>
+        </li>
+        <li class="dir">
+          <span class="dir__name">Аппаратные массажи</span>
+          <span class="dir__desc">LPG, УЗ-кавитация, термо-вакуум, Sketch Body</span>
+          <span class="dir__count">15 процедур</span>
+        </li>
+        <li class="dir">
+          <span class="dir__name">Удаление татуажа и тату</span>
+          <span class="dir__desc">Лазер и ремувер, посеансно</span>
+          <span class="dir__count">3 процедуры</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4. ЦЕНЫ — белый -->
+  <section class="price surf surf--paper" id="price">
+    <div class="price__head">
+      <div>
+        <p class="eyebrow eyebrow--dark">Без «уточняйте по телефону»</p>
+        <h2 class="h2 h2--dark">Цены<br><em>полностью</em></h2>
+      </div>
+      <p class="price__note">
+        153 позиции по всем направлениям. Раскройте нужную категорию — или найдите процедуру
+        поиском по странице (Ctrl+F), свёрнутые разделы тоже находятся.
+      </p>
+    </div>
+
+    <div class="price__list">
+        <details class="cat" open>
+          <summary class="cat__head">
+            <span class="cat__name">Перманентный макияж</span>
+            <span class="cat__count">15 процедур</span>
+            <span class="cat__sign" aria-hidden="true"></span>
+          </summary>
+          <div class="cat__body">
+            <p class="cat__note">Рефреш (обновление ПМ через 1-2 года)</p>
+            <ul class="rows">
+              <li class="row"><span class="row__name">Перманентный макияж «Брови»</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">9 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Перманентный макияж «Губы»</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">9 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Перманентный макияж «Межресничка»</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">5 900&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Перманентный макияж «Стрелки классические»</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">7 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Перманентный макияж «Стрелки с растушевкой»</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">10 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Коррекция ПМ бровей (через 30-40 дней)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">4 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Коррекция ПМ губ (через 30-40 дней)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">4 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Коррекция ПМ межреснички (через 30-40 дней)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">3 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Коррекция ПМ стрелки классические (через 30-40 дней)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">4 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Коррекция ПМ стрелки с растушевкой (через 30-40 дней)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">5 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">обновление ПМ бровей</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">7 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">обновление ПМ губ</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">7 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Обновление ПМ межреснички</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">4 400&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">обновление стрелки ПМ классические</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">6 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">обновление ПМ стрелки с растушевкой</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">8 000&nbsp;₽</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="cat">
+          <summary class="cat__head">
+            <span class="cat__name">Аппаратная косметология</span>
+            <span class="cat__count">29 процедур</span>
+            <span class="cat__sign" aria-hidden="true"></span>
+          </summary>
+          <div class="cat__body">
+            <ul class="rows">
+              <li class="row"><span class="row__name">Карбоновый пилинг</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 100&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">RF-лифтинг (лицо)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 800&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">RF-лифтинг (лицо+ шея)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 100&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">RF-лифтинг (лицо+шея+зона декольте)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 600&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Лазерная биоревитализация (лицо)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">3 290&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Лазерная биоревитализация (лицо+шея)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">3 700&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Лазерная биоревитализация (лицо+шея+декольте)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">4 400&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Микротоковая терапия (зона глаз)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 200&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Микротоковая терапия (зона лицо)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 700&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Микротоковая терапия (зона лицо+шея+декольте)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 600&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Фотоомоложение-ELOSомоложение (лицо)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">8 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Фотоомоложение-ELOSомоложение (декольте)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">5 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Фотоомоложение-ELOSомоложение (кисти рук)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">3 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Фотоомоложение-ELOSомоложение (комплекс лицо, шея, декольте)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">16 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Игольчатый RF-лифтинг (лицо)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">9 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Игольчатый RF-лифтинг (вокруг глаз)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">6 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Игольчатый RF-лифтинг (шея)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">9 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Игольчатый RF-лифтинг (декольте)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">9 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Игольчатый RF-лифтинг (лицо, шея, декольте)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">22 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Игольчатый RF-лифтинг (руки)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">12 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Игольчатый RF-лифтинг (низ живота)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">12 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Игольчатый RF-лифтинг (бедра)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">12 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Игольчатый RF-лифтинг (над коленом)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">10 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Игольчатый RF-лифтинг (ягодицы)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">10 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Игольчатый RF-лифтинг (кожа головы)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">7 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Прессотерапия (самостоятельная)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">700&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Холодная плазма (лицо)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">3 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Холодная плазма (лицо+шея)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">3 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Холодная плазма (лицо+шея+декольте)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">4 200&nbsp;₽</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="cat">
+          <summary class="cat__head">
+            <span class="cat__name">Инъекционная косметология</span>
+            <span class="cat__count">26 процедур</span>
+            <span class="cat__sign" aria-hidden="true"></span>
+          </summary>
+          <div class="cat__body">
+            <ul class="rows">
+              <li class="row"><span class="row__name">Липолитики (лицо)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">5 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Липолитики (живот)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">6 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Липолитики (бедра)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">7 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Ботулинотерапия «Диспорт»</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">350&nbsp;₽ / ед</span></li>
+              <li class="row"><span class="row__name">Коррекция формы губ (Vimedica, Neuramis Deep)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">12 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Коррекция формы губ (Stylage M)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">17 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Удаление филлера</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Биоревитализация PROFHILO</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">17 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Биоревитализация (Италия) DNA-Lift (лицо)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">9 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Биоревитализация (Италия) DNA-Lift (лицо, шея, декольте)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">12 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Биоревитализация (Италия) DNA-Lift (лицо, шея)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">11 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Биоревитализация (Италия) BotoMeso Booster (лицо)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">9 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Биоревитализация (Италия) BotoMeso Booster (лицо, шея)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">11 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Биоревитализация (Италия) BotoMeso Booster (лицо, шея, декольте)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">12 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Биоревитализация (Италия) Fresco Energy (лицо)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">9 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Биоревитализация (Италия) Fresco Energy (лицо, шея)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">11 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Биоревитализация (Италия) Fresco Energy (лицо, шея, декольте)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">12 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Биоревитализация (Италия) Nucleo Anti-Gravity (лицо)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">9 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Биоревитализация (Италия) Nucleo Anti-Gravity (лицо, шея)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">11 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Биоревитализация (Италия) Nucleo Anti-Gravity (лицо, шея, декольте)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">12 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Биоревитализация (Корея) Kiara Reju (лицо)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">5 900&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Биоревитализация (Корея) Kiara Reju (лицо, шея)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">7 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Биоревитализация (Корея) Kiara Reju (лицо, шея, декольте)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">8 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Биоревитализация (Корея) Hyaron (лицо)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">6 300&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Биоревитализация (Корея) Hyaron (лицо, шея)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">7 700&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Биоревитализация (Корея) Hyaron (лицо, шея, декольте)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">8 400&nbsp;₽</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="cat">
+          <summary class="cat__head">
+            <span class="cat__name">Лазерная эпиляция</span>
+            <span class="cat__count">23 процедуры</span>
+            <span class="cat__sign" aria-hidden="true"></span>
+          </summary>
+          <div class="cat__body">
+            <ul class="rows">
+              <li class="row"><span class="row__name">Верхняя губа</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">490&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Скулы</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">990&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Руки до локтя/предплечье</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 100&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Руки полностью</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 990&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Подмышечные впадины</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">990&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Белая полоска живота</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">990&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Бикини «классика»</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">990&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Глубокое бикини</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 990&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Ноги голень</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 990&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Ноги бедро</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 190&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Ноги полностью</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">3 790&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Комплекс 2 зоны (Подмышки Глубокое бикини)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 990&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Комплекс 2 зоны (Подмышки Голень)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 990&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Комплекс 2 зоны (Глубокое бикини Голень)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">3 900&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Комплекс 3 зоны (Подмышки Глубокое бикини Голень)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">4 700&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Комплекс 3 зоны (Подмышки Глубокое бикини Ноги полностью)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">6 300&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Комплекс «Все тело»</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">7 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Предварительная подготовка (бритва)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">150&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Живот</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Поясница</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Спина (до пояса)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Лицо полностью</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Ореолы</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">600&nbsp;₽</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="cat">
+          <summary class="cat__head">
+            <span class="cat__name">Ногтевой сервис</span>
+            <span class="cat__count">22 процедуры</span>
+            <span class="cat__sign" aria-hidden="true"></span>
+          </summary>
+          <div class="cat__body">
+            <ul class="rows">
+              <li class="row"><span class="row__name">Маникюр без покрытия</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 100&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Мужской маникюр без покрытия</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 200&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Маникюр (покрытие гель-лак) однотонный</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Маникюр (покрытие гель-лак френч / лунки)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">3 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Снятие чужого покрытия</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">250&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Снятие без последующего покрытия</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">300&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Снятие нарощенных ногтей</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">450&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Ремонт ногтя</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">200&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Дизайн (за ноготь)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">50&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Педикюр (пальцы)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Педикюр (пальцы / стопы)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 400&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Педикюр (пальцы / покрытие)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 400&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Педикюр (пальцы / стопы / покрытие)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 800&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Педикюр мужской</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">3 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Наращивание ногтей / однотонное покрытие</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">3 400&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Наращивание ногтей / френч</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">3 800&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Коррекция нарощенных ногтей (однотонное покрытие)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 800&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Педикюр френч (пальцы)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 900&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Педикюр френч (пальцы / стопы)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">3 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Зачистка онихолизис</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">600&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Педикюр (стопы)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 700&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Прессотерапия (к педикюру)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">500&nbsp;₽</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="cat">
+          <summary class="cat__head">
+            <span class="cat__name">Эстетическая косметология</span>
+            <span class="cat__count">20 процедур</span>
+            <span class="cat__sign" aria-hidden="true"></span>
+          </summary>
+          <div class="cat__body">
+            <ul class="rows">
+              <li class="row"><span class="row__name">Ламинирование ресниц</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 700&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Ламинирование бровей</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Архитектура бровей с окрашиванием</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 900&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Окрашивание ресниц</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">600&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Долговременная укладка бровей</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 700&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Архитектура бровей (коррекция формы)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">900&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Окрашивание бровей</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 200&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Пилинг-скатка</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 100&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Гель-пилинг Re-Generation AHA 20%</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 400&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Гель-пилинг Lactic Re-Generation 30%</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 700&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Желтый пилинг</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">5 800&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Уход по типу кожи</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 900&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Ультразвуковая чистка</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">3 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Механическая чистка</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">3 400&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Комбинированная чистка</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">4 200&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Атравматичная чистка/Уход "DetoBubble"</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">3 700&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Анализ кожи при помощи оборудования с ИИ</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">990&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">УЗ чистка+Холодная плазма</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">4 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Механическая чистка+Холодная плазма</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">4 900&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Комбинированная чистка+Холодная плазма</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">5 700&nbsp;₽</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="cat">
+          <summary class="cat__head">
+            <span class="cat__name">Аппаратные массажи</span>
+            <span class="cat__count">15 процедур</span>
+            <span class="cat__sign" aria-hidden="true"></span>
+          </summary>
+          <div class="cat__body">
+            <p class="cat__note">Скидка 30% на первый(пробный) сеанс и абонемент</p>
+            <ul class="rows">
+              <li class="row"><span class="row__name">УЗ-кавитация на аппарате Perfect PRO</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 900&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">LPG (Пробл. зона)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 800&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">LPG (Все тело)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Термо-вакуумный массаж (отдельной зоны)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Термо-вакуумный массаж (всё тело)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 700&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Вакуумный массаж + УЗ-кавитация (отдельная зона)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 900&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Вакуумный массаж + УЗ-кавитация (всё тело)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">3 900&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Термо-вакуумный массаж +УЗ-кавитация (отдельной зоны)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 900&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Термо-вакуумный массаж +УЗ-кавитация (всё тело)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">3 900&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Sketch Body (аппаратный массаж)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 400&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Sketch Body + LPG массаж (комплекс)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">4 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Sketch Body+Термо-вакуумный массаж(комплекс)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">4 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Sketch Body+Термо-вакуумный массаж+LPG массаж (комплекс)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">6 500&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Sketch Body+Термо-вакуумный массаж+ УЗ-кавитация(комплекс)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">6 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Sketch Body+lpg+ УЗ-кавитация(комплекс)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">6 000&nbsp;₽</span></li>
+            </ul>
+          </div>
+        </details>
+        <details class="cat">
+          <summary class="cat__head">
+            <span class="cat__name">Удаление татуажа и тату</span>
+            <span class="cat__count">3 процедуры</span>
+            <span class="cat__sign" aria-hidden="true"></span>
+          </summary>
+          <div class="cat__body">
+            <ul class="rows">
+              <li class="row"><span class="row__name">Лазерное удаление татуажа</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 500&nbsp;₽ / сеанс</span></li>
+              <li class="row"><span class="row__name">Лазерное удаление татуировки</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">от 1 000&nbsp;₽</span></li>
+              <li class="row"><span class="row__name">Удаление ремувером</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 800&nbsp;₽ / сеанс</span></li>
+            </ul>
+          </div>
+        </details>
+    </div>
+
+    <p class="price__fine">
+      Имеются противопоказания. Необходима консультация специалиста.
+      Информация на сайте не является публичной офертой.
+    </p>
+  </section>
+
+  <!-- 5. АКЦИИ — белый, продолжение открытой части -->
+  <section class="deals surf surf--paper" id="deals">
+    <div class="deals__grid">
+      <div class="deals__head">
+        <p class="eyebrow eyebrow--dark">Постоянные предложения</p>
+        <h2 class="h2 h2--dark">Три повода<br><em>прийти сейчас</em></h2>
+        <p class="deals__text">
+          Это не разовые акции «до конца недели», а условия, которые действуют постоянно.
+          Всё остальное — по прайсу выше, без скрытых доплат.
+        </p>
+        <a class="link link--dark" href="#price">Вернуться к ценам</a>
+      </div>
+
+      <ul class="deals__list">
+        <li class="deal deal--hot">
+          <span class="deal__value">−30%</span>
+          <b class="deal__name">Первый сеанс аппаратного массажа</b>
+          <p class="deal__text">
+            Скидка на пробный сеанс и на абонемент: LPG, Sketch&nbsp;Body,
+            термо-вакуумный массаж, УЗ-кавитация.
+          </p>
+        </li>
+        <li class="deal">
+          <span class="deal__value">7 500&nbsp;₽</span>
+          <b class="deal__name">Обновление перманентного макияжа</b>
+          <p class="deal__text">
+            Рефреш бровей или губ через 1–2 года — вместо 9&nbsp;000&nbsp;₽ за новую процедуру.
+          </p>
+        </li>
+        <li class="deal">
+          <span class="deal__value deal__value--word">Бесплатно</span>
+          <b class="deal__name">Подбор уходовых средств</b>
+          <p class="deal__text">
+            Косметолог собирает схему домашнего ухода прямо на консультации — отдельно платить не нужно.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 6. ПРОСТРАНСТВО СТУДИИ — шоколад -->
+  <section class="space surf surf--noir" id="studio">
+    <div class="space__grid">
+      <div class="space__intro">
+        <p class="eyebrow">Место, куда возвращаются</p>
+        <h2 class="h2">Студия<br><em>на двух уровнях</em></h2>
+        <p class="space__text">
+          Кирпич, высокие потолки и свет во всю стену. Косметологический кабинет с аппаратами —
+          отдельно от общего зала: процедура проходит один на один с мастером.
+        </p>
+        <ul class="space__facts">
+          <li>Отдельный кабинет косметологии</li>
+          <li>Своя зона ногтевого сервиса</li>
+          <li>Раменское, Высоковольтная, 22</li>
+        </ul>
+      </div>
+
+      <figure class="shot shot--main">
+        <img src="assets/images/salon-05.webp" alt="Двухуровневый зал студии: кирпичные стены, антресоль, зеркала с подсветкой" loading="lazy" width="1280" height="1100">
+        <figcaption>Два уровня, кирпич и свет</figcaption>
+      </figure>
+
+      <figure class="shot shot--tall">
+        <img src="assets/images/salon-01.webp" alt="Кабинет аппаратной косметологии: кушетка, аппараты, ширма" loading="lazy" width="960" height="1280">
+        <figcaption>Кабинет аппаратной косметологии</figcaption>
+      </figure>
+
+      <figure class="shot shot--sm">
+        <img src="assets/images/salon-04.webp" alt="Микротоковая терапия: работа манипулой по зоне вокруг глаз" loading="lazy" width="464" height="464">
+        <figcaption>Микротоковая терапия</figcaption>
+      </figure>
+
+      <figure class="shot shot--sm">
+        <img src="assets/images/salon-06.webp" alt="Аппаратная процедура по телу крупным планом" loading="lazy" width="480" height="480">
+        <figcaption>Работа на аппарате</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 7. ДОВЕРИЕ И ОТЗЫВЫ — коричневый -->
+  <section class="trust surf surf--cocoa" id="reviews">
+    <div class="trust__top">
+      <div class="trust__head">
+        <p class="eyebrow">Говорят гости</p>
+        <h2 class="h2">234 оценки<br><em>и рейтинг 5,0</em></h2>
+        <p class="trust__text">
+          Отзывы ниже — с Яндекс Карт, без правок. Проценты рядом — тематический анализ Яндекса:
+          он сам разбирает отзывы по темам и считает долю положительных.
+        </p>
+        <a class="link" href="https://yandex.ru/maps/org/29792745953/reviews/" target="_blank" rel="noopener">Все отзывы на Яндекс Картах</a>
+      </div>
+
+      <ul class="scores">
+        <li><b>98%</b><span>о мастерах</span></li>
+        <li><b>100%</b><span>об атмосфере</span></li>
+        <li><b>96%</b><span>о косметологии</span></li>
+        <li><b>100%</b><span>о чистоте</span></li>
+      </ul>
+    </div>
+
+    <ul class="quotes">
+      <li class="quote">
+        <span class="quote__stars" aria-label="Оценка 5 из 5">★★★★★</span>
+        <blockquote>Прекрасный персонал работает в салоне! Очень милые и добрые девушки, обслуживание на высоте. Ногти без покрытия выглядят аккуратно и красиво. Одно удовольствие ходить в данный салон!</blockquote>
+        <p class="quote__who"><b>Полина Гудач</b><span>16 июля 2025 · Яндекс Карты</span></p>
+      </li>
+      <li class="quote">
+        <span class="quote__stars" aria-label="Оценка 5 из 5">★★★★★</span>
+        <blockquote>Отличное место, приятный персонал. Ходила на маникюр к мастеру Анастасии — очень понравилось. Очень аккуратно, мягко и быстро сделала именно то, что хотелось.</blockquote>
+        <p class="quote__who"><b>Мария Е.</b><span>2 марта · Яндекс Карты</span></p>
+      </li>
+      <li class="quote">
+        <span class="quote__stars" aria-label="Оценка 5 из 5">★★★★★</span>
+        <blockquote>Спокойная камерная обстановка, доброжелательный персонал, помещение чистенькое и уютное. Делаю маникюр у Анастасии. Работает качественно, быстро, аккуратно.</blockquote>
+        <p class="quote__who"><b>Наталия Б.</b><span>23 октября 2025 · Яндекс Карты</span></p>
+      </li>
+      <li class="quote">
+        <span class="quote__stars" aria-label="Оценка 5 из 5">★★★★★</span>
+        <blockquote>Нашла своего мастера! Доброжелательный администратор и мастер Анастасия. Всё сделано аккуратно и красиво, помогли подобрать цвет. Обязательно вернусь.</blockquote>
+        <p class="quote__who"><b>Ксения Абрамова</b><span>28 августа 2025 · Яндекс Карты</span></p>
+      </li>
+    </ul>
+  </section>
+
+  <!-- 8. ОСНОВАТЕЛЬНИЦА — шоколад -->
+  <section class="founder surf surf--noir" id="natalia">
+    <div class="founder__grid">
+      <figure class="founder__figure">
+        <div class="founder__frame">
+          <img src="assets/images/natalia-black-dress.jpg" alt="Наталья Манохина, основательница студии «Красивая Ты»" loading="lazy" width="800" height="1202">
+        </div>
+        <figcaption class="founder__tag">
+          <b>Основательница</b>
+          <span>студии «Красивая Ты»</span>
+        </figcaption>
+      </figure>
+
+      <div class="founder__copy">
+        <p class="eyebrow">Кто стоит за студией</p>
+        <h2 class="h2">Наталья<br><em>Манохина</em></h2>
+        <p class="founder__text">
+          «Красивая Ты» — студия Натальи Манохиной, где эстетический перманентный макияж
+          и аппаратная косметология соединяются с внимательным, индивидуальным подходом
+          к каждому лицу.
+        </p>
+        <p class="founder__text">
+          Наталья ведёт студию открыто: новые работы, разборы процедур и жизнь студии изнутри —
+          в её сообществе ВКонтакте и в Telegram-канале.
+        </p>
+        <div class="founder__actions">
+          <a class="btn" href="https://vk.ru/id162018962" target="_blank" rel="noopener">Смотреть VK-блог</a>
+          <a class="link" href="https://t.me/krasivayati" target="_blank" rel="noopener">Telegram-канал</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. КОНТАКТЫ И КАРТА — коричневый -->
+  <section class="contacts surf surf--cocoa" id="contacts">
+    <div class="contacts__grid">
+      <div class="contacts__copy">
+        <p class="eyebrow">Как добраться и записаться</p>
+        <h2 class="h2">Ждём вас<br><em>в Раменском</em></h2>
+
+        <dl class="cn">
+          <div class="cn__row">
+            <dt>Адрес</dt>
+            <dd>Высоковольтная ул., 22 · ЖК «Парк на Фабричной»</dd>
+          </div>
+          <div class="cn__row">
+            <dt>Телефон</dt>
+            <dd><a href="tel:+79651952277">+7 965 195-22-77</a></dd>
+          </div>
+          <div class="cn__row">
+            <dt>Написать</dt>
+            <dd>
+              <a href="https://wa.me/79651952277" target="_blank" rel="noopener">WhatsApp</a> ·
+              <a href="https://t.me/krasivayati" target="_blank" rel="noopener">Telegram</a> ·
+              <a href="https://vk.ru/id162018962" target="_blank" rel="noopener">VK</a> ·
+              <a href="https://max.ru/join/-TuE7SKXJ31PdEtAcn-28jNBv14W3XG6q3lgyBe5lx4" target="_blank" rel="noopener">Max</a>
+            </dd>
+          </div>
+          <!-- TODO: спросить у Натальи реальные часы работы и поставить их вместо заглушки -->
+          <div class="cn__row">
+            <dt>Часы работы</dt>
+            <dd>уточняйте по телефону</dd>
+          </div>
+        </dl>
+
+        <a class="btn" href="https://n478417.yclients.com/" target="_blank" rel="noopener">Записаться онлайн</a>
+      </div>
+
+      <div class="map">
+        <iframe src="https://yandex.ru/map-widget/v1/?ll=38.202501%2C55.573735&amp;z=16&amp;oid=29792745953"
+                title="Студия «Красивая Ты» на Яндекс Картах" loading="lazy" allowfullscreen></iframe>
+        <a class="map__link" href="https://yandex.ru/maps/org/29792745953/" target="_blank" rel="noopener">Построить маршрут</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot surf surf--noir">
+  <div class="foot__grid">
+    <a class="brand brand--foot" href="#top">
+      <span class="brand__text">
+        <span class="brand__script">Красивая&nbsp;Ты</span>
+        <span class="brand__sub">Студия Натальи Манохиной</span>
+      </span>
+    </a>
+
+    <p class="foot__fine">
+      Имеются противопоказания. Необходима консультация специалиста.
+      Информация на сайте не является публичной офертой.
+    </p>
+
+    <a class="foot__up" href="#top">Наверх ↑</a>
+  </div>
+</footer>
+
+</body>
+</html>
