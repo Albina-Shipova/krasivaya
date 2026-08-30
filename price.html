@@ -60,20 +60,16 @@
         <p class="eyebrow eyebrow--dark">Без «уточняйте по телефону»</p>
         <h2 class="h2 h2--dark">Цены<br><em>полностью</em></h2>
       </div>
-      <p class="price__note">
-        153 позиции по всем направлениям. Раскройте нужную категорию — или найдите процедуру
-        поиском по странице (Ctrl+F), свёрнутые разделы тоже находятся.
-      </p>
     </div>
 
     <div class="price__list">
-        <details class="cat" open>
+        <details id="cat-permanent" class="cat" open>
           <summary class="cat__head">
             <span class="cat__name">Перманентный макияж</span>
-            <span class="cat__count">15 процедур</span>
             <span class="cat__sign" aria-hidden="true"></span>
           </summary>
           <div class="cat__body">
+            <div class="cat__about"><p>Естественная выразительность, которая остаётся с вами каждый день. Подчёркиваем форму бровей и губ, сохраняя гармоничность и индивидуальность черт лица.</p></div>
             <p class="cat__note">Рефреш (обновление ПМ через 1-2 года)</p>
             <ul class="rows">
               <li class="row"><span class="row__name">Перманентный макияж «Брови»</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">9 000&nbsp;₽</span></li>
@@ -94,13 +90,13 @@
             </ul>
           </div>
         </details>
-        <details class="cat">
+        <details id="cat-hardware" class="cat">
           <summary class="cat__head">
             <span class="cat__name">Аппаратная косметология</span>
-            <span class="cat__count">29 процедур</span>
             <span class="cat__sign" aria-hidden="true"></span>
           </summary>
           <div class="cat__body">
+            <div class="cat__about"><p><b>Карбоновый пилинг.</b> Процедура для эффекта свежей, гладкой и сияющей кожи. Глубоко очищает, визуально выравнивает тон и текстуру, возвращая лицу ухоженный и отдохнувший вид.</p><p><b>RF-лифтинг неинвазивный.</b> Мягкое радиочастотное воздействие для более плотной, упругой и подтянутой кожи. Процедура помогает подчеркнуть контуры лица и сохранить свежесть без инъекций.</p><p><b>RF-лифтинг игольчатый.</b> Интенсивная работа с качеством кожи на глубоком уровне. Сочетание микроигольчатого воздействия и RF-энергии стимулирует процессы обновления, улучшая плотность, рельеф и упругость кожи.</p><p><b>Микротоковая терапия.</b> Деликатная процедура для свежего и отдохнувшего вида лица. Помогает уменьшить отёчность, улучшить тонус кожи и подчеркнуть более чёткие контуры.</p><p><b>Биоревитализация лазерная.</b> Комфортный способ интенсивного увлажнения без инъекций. Процедура помогает улучшить гладкость, эластичность и тонус кожи, создавая эффект свежести и естественного сияния.</p><p><b>Холодная плазма.</b> Современная технология для комплексного улучшения состояния кожи. Помогает работать с несовершенствами, текстурой и общим качеством кожи, возвращая ей более ровный и ухоженный вид.</p></div>
             <ul class="rows">
               <li class="row"><span class="row__name">Карбоновый пилинг</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 100&nbsp;₽</span></li>
               <li class="row"><span class="row__name">RF-лифтинг (лицо)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 800&nbsp;₽</span></li>
@@ -134,13 +130,13 @@
             </ul>
           </div>
         </details>
-        <details class="cat">
+        <details id="cat-injection" class="cat">
           <summary class="cat__head">
             <span class="cat__name">Инъекционная косметология</span>
-            <span class="cat__count">26 процедур</span>
             <span class="cat__sign" aria-hidden="true"></span>
           </summary>
           <div class="cat__body">
+            <div class="cat__about"><p><b>Биоревитализация инъекционная.</b> Интенсивное увлажнение и восстановление качества кожи. Гиалуроновая кислота помогает вернуть коже гладкость, эластичность и естественное сияние, делая её визуально более молодой и ухоженной.</p></div>
             <ul class="rows">
               <li class="row"><span class="row__name">Липолитики (лицо)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">5 500&nbsp;₽</span></li>
               <li class="row"><span class="row__name">Липолитики (живот)</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">6 000&nbsp;₽</span></li>
@@ -171,13 +167,13 @@
             </ul>
           </div>
         </details>
-        <details class="cat">
+        <details id="cat-epilation" class="cat">
           <summary class="cat__head">
             <span class="cat__name">Лазерная эпиляция</span>
-            <span class="cat__count">23 процедуры</span>
             <span class="cat__sign" aria-hidden="true"></span>
           </summary>
           <div class="cat__body">
+            <div class="cat__about"><p>Гладкая кожа без ежедневной борьбы с нежелательными волосами. Курс процедур позволяет значительно сократить их количество и замедлить рост, обеспечивая длительный эстетичный результат.</p></div>
             <ul class="rows">
               <li class="row"><span class="row__name">Верхняя губа</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">490&nbsp;₽</span></li>
               <li class="row"><span class="row__name">Скулы</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">990&nbsp;₽</span></li>
@@ -205,13 +201,13 @@
             </ul>
           </div>
         </details>
-        <details class="cat">
+        <details id="cat-nails" class="cat">
           <summary class="cat__head">
             <span class="cat__name">Ногтевой сервис</span>
-            <span class="cat__count">22 процедуры</span>
             <span class="cat__sign" aria-hidden="true"></span>
           </summary>
           <div class="cat__body">
+            <div class="cat__about"><p>Безупречный уход до кончиков пальцев. Идеальная форма, ухоженная кожа и аккуратное покрытие создают ощущение завершённости и эстетики в каждой детали.</p></div>
             <ul class="rows">
               <li class="row"><span class="row__name">Маникюр без покрытия</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 100&nbsp;₽</span></li>
               <li class="row"><span class="row__name">Мужской маникюр без покрытия</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 200&nbsp;₽</span></li>
@@ -238,10 +234,9 @@
             </ul>
           </div>
         </details>
-        <details class="cat">
+        <details id="cat-esthetic" class="cat">
           <summary class="cat__head">
             <span class="cat__name">Эстетическая косметология</span>
-            <span class="cat__count">20 процедур</span>
             <span class="cat__sign" aria-hidden="true"></span>
           </summary>
           <div class="cat__body">
@@ -269,13 +264,13 @@
             </ul>
           </div>
         </details>
-        <details class="cat">
+        <details id="cat-massage" class="cat">
           <summary class="cat__head">
             <span class="cat__name">Аппаратные массажи</span>
-            <span class="cat__count">15 процедур</span>
             <span class="cat__sign" aria-hidden="true"></span>
           </summary>
           <div class="cat__body">
+            <div class="cat__about"><p><b>LPG-массаж.</b> Интеллектуальный уход за телом для более лёгкого и гармоничного силуэта. Аппаратный массаж помогает уменьшить отёчность, улучшить микроциркуляцию и сделать кожу визуально более гладкой и подтянутой.</p><p><b>Ультразвуковая кавитация.</b> Технология для коррекции локальных зон и создания более гармоничных контуров тела. Помогает работать с локальными жировыми отложениями и подчеркнуть силуэт.</p><p><b>Вакуумный массаж.</b> Интенсивный уход за телом для гладкости и тонуса кожи. Вакуумное воздействие улучшает микроциркуляцию, помогает уменьшить отёчность и сделать контуры тела более выразительными.</p><p><b>Sketch-массаж.</b> Моделирующий массаж для тех, кто ценит выразительный силуэт. Глубокая работа с тканями помогает подчеркнуть контуры тела, улучшить тонус кожи и создать ощущение лёгкости.</p></div>
             <p class="cat__note">Скидка 30% на первый(пробный) сеанс и абонемент</p>
             <ul class="rows">
               <li class="row"><span class="row__name">УЗ-кавитация на аппарате Perfect PRO</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">1 900&nbsp;₽</span></li>
@@ -296,13 +291,13 @@
             </ul>
           </div>
         </details>
-        <details class="cat">
+        <details id="cat-tattoo" class="cat">
           <summary class="cat__head">
             <span class="cat__name">Удаление татуажа и тату</span>
-            <span class="cat__count">3 процедуры</span>
             <span class="cat__sign" aria-hidden="true"></span>
           </summary>
           <div class="cat__body">
+            <div class="cat__about"><p>Деликатное избавление от нежелательного перманентного макияжа. Лазер помогает постепенно осветлить пигмент и подготовить кожу к новому эстетичному результату.</p></div>
             <ul class="rows">
               <li class="row"><span class="row__name">Лазерное удаление татуажа</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">2 500&nbsp;₽ / сеанс</span></li>
               <li class="row"><span class="row__name">Лазерное удаление татуировки</span><span class="row__lead" aria-hidden="true"></span><span class="row__price">от 1 000&nbsp;₽</span></li>
@@ -485,6 +480,76 @@
       revs.querySelector('.revs__arrow--prev').addEventListener('click', () => track.scrollBy({ left: -step(), behavior: 'smooth' }));
       revs.querySelector('.revs__arrow--next').addEventListener('click', () => track.scrollBy({ left: step(), behavior: 'smooth' }));
     }
+  })();
+  (() => {
+    const headerOffset = () => (document.querySelector('.hdr')?.offsetHeight || 64) + 24;
+    const openFromHash = () => {
+      const id = decodeURIComponent(location.hash.slice(1));
+      if (!id) return;
+      const cat = document.getElementById(id);
+      if (!cat || !cat.classList.contains('cat')) return;
+      cat.open = true;
+      cat.classList.remove('rv', 'rv-in');
+      cat.style.removeProperty('--rd');
+      setTimeout(() => {
+        const y = window.scrollY + cat.getBoundingClientRect().top - headerOffset();
+        window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
+      }, 150);
+    };
+    if (location.hash) openFromHash();
+    window.addEventListener('hashchange', openFromHash);
+  })();
+
+  /* Появление блоков при скролле */
+  (() => {
+    if (!('IntersectionObserver' in window)) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const SEL = [
+      '.hero__copy > *',
+      '.dirs__head > *', '.proc__head > div > *', '.proc__card',
+      '.portfolio__head .eyebrow', '.portfolio__slide',
+      '.deals__head > *', '.deal',
+      '.diag__carousel',
+      '.space__intro > *', '.shot',
+      '.trust__head > *', '.scores li', '.quote',
+      '.revs__head > *', '.revs__item', '.revs__more',
+      '.founder__figure', '.founder__copy > *',
+      '.cta__inner > *',
+      '.contacts__copy > .eyebrow', '.contacts__copy > .h2', '.cn__row',
+      '.contacts__actions', '.contacts__social', '.map',
+      '.price__head > div > *', '.price__note', '.price__fine', '.price--page__back',
+      '.cat', '.cat__about',
+      '.foot__brand', '.foot__col'
+    ].join(',');
+
+    const els = document.querySelectorAll(SEL);
+    els.forEach((el) => el.classList.add('rv'));
+
+    [['.hero__copy > *', 85], ['.founder__copy > *', 75], ['.cta__inner > *', 75],
+     ['.proc__card', 55], ['.portfolio__slide', 40], ['.deal', 80], ['.shot', 75],
+     ['.scores li', 65], ['.quote', 85], ['.revs__item', 50], ['.cat', 40],
+     ['.cn__row', 60], ['.foot__col', 60], ['.price__head > div > *', 75]
+    ].forEach(([sel, step]) => {
+      document.querySelectorAll(sel).forEach((el, i) => {
+        el.style.setProperty('--rd', Math.min(i, 3) * step);
+      });
+    });
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (!e.isIntersecting) return;
+        const el = e.target;
+        io.unobserve(el);
+        el.classList.add('rv-in');
+        setTimeout(() => {
+          el.classList.remove('rv', 'rv-in');
+          el.style.removeProperty('--rd');
+        }, 1100);
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -4% 0px' });
+
+    els.forEach((el) => io.observe(el));
   })();
 </script>
 </body>
