@@ -1289,23 +1289,26 @@ a { color: inherit; text-decoration: none; }
   .foot__bar { margin-top: clamp(22px, 6vw, 32px); }
   .foot__copy { white-space: normal; }
 
+  /* Первый экран: фото-полосой сверху, затем отдельный текстовый блок (блок 3) */
   .hero {
     min-height: auto;
-    padding-top: clamp(360px, 92vw, 560px);
-    padding-bottom: 64px;
-    align-items: end;
+    padding: 368px var(--pad) 32px;   /* 340 фото + 28 отступ до текста */
+    align-items: start;
   }
   .hero::after {
     inset: 0 0 auto;
-    height: clamp(390px, 105vw, 620px);
-    background-position: 58% center;
+    height: 340px;
+    background-position: 50% 38%;
   }
   .hero__light {
-    inset: clamp(250px, 66vw, 430px) 0 auto;
-    width: 100%; height: 180px;
-    background: linear-gradient(180deg, rgba(20,19,30,0) 0%, var(--noir) 78%);
+    inset: 262px 0 auto;
+    width: 100%; height: 118px;
+    background: linear-gradient(180deg, rgba(20,19,30,0) 0%, var(--noir) 84%);
   }
-  .hero__copy { width: 100%; max-width: 650px; }
+  .hero__copy { width: 100%; max-width: 560px; }
+  .hero__actions { margin-top: 26px; }
+  .hero__offer { margin-top: 16px; }
+  .hero__stats { margin-top: 22px; }
 
   .fab { display: block; position: fixed; z-index: 95; right: 14px; bottom: 14px; }
   .foot__up { display: none; }
@@ -1371,16 +1374,42 @@ a { color: inherit; text-decoration: none; }
   .proc__track { align-items: flex-start; }
   .proc__all { width: 100%; }
 
-  .hero__actions { flex-direction: column; align-items: stretch; gap: 18px; }
+  /* Первый экран — компактнее (блок 3) */
+  .hero { padding-top: 348px; }
+  .hero::after { height: 320px; }
+  .hero__light { inset: 244px 0 auto; }
+  .hero__actions { flex-direction: column; align-items: stretch; gap: 16px; max-width: 380px; }
   .hero__actions .btn { width: 100%; }
-  .hero__actions .link { align-self: center; }
-  .hero__stats { gap: 16px; margin-top: 24px; }
-  .hero__stat + .hero__stat { padding-left: 16px; }
-  .hero__stat > span { max-width: 13ch; }
-  .hero__stat b { font-size: clamp(24px, 8vw, 30px); }
+  .hero__actions .link { align-self: flex-start; }
+  .hero__offer {
+    align-self: flex-start;
+    padding: 10px 14px; border-radius: 14px;
+    font-size: 12.5px;
+  }
+  .hero__stats { gap: 18px; margin-top: 20px; }
+  .hero__stat + .hero__stat { padding-left: 18px; }
+  .hero__stat > span { max-width: 14ch; font-size: 11px; }
+  .hero__stat b { font-size: 34px; }
   .contacts__actions { flex-direction: column; align-items: stretch; }
   .contacts__actions .btn { width: 100%; }
-  .diag__nav { gap: 14px; }
+
+  /* Диагностика — компактнее (блок 6) */
+  .diag__figure { aspect-ratio: 1 / 1.15; margin-top: 16px; }
+  .diag__figure--wide { aspect-ratio: 4 / 3; }
+  .diag__grid { gap: 22px; }
+  .diag__lead { font-size: 16px; line-height: 1.5; }
+  .diag__list { margin-top: 20px; }
+  .diag__list li { grid-template-columns: 1fr; gap: 3px; padding: 15px 16px; }
+  .diag__offer {
+    margin-top: 18px; padding: 12px 14px;
+    border: 1px solid var(--ember); border-radius: 12px;
+    background: var(--noir); font-size: 15px;
+  }
+  .diag__actions { flex-direction: column; align-items: stretch; gap: 14px; margin-top: 18px; }
+  .diag__actions .btn { width: 100%; }
+  .diag__actions .link { align-self: flex-start; }
+  .diag__mistakes { margin-top: 18px; }
+  .diag__nav { gap: 14px; margin-top: 20px; }
   .seal { left: -6px; bottom: 26px; width: 92px; height: 92px; }
   .seal__score { font-size: 24px; }
   .dirs__list { grid-template-columns: 1fr; }
@@ -1392,7 +1421,6 @@ a { color: inherit; text-decoration: none; }
   .cat__head { grid-template-columns: 1fr auto; }
   .cat__count { grid-column: 1; grid-row: 2; }
 
-  .diag__list li { grid-template-columns: 1fr; gap: 3px; }
   .revs__controls { display: none; }
   .revs__item { width: 80%; height: 148px; }
   .deal { grid-template-columns: 1fr; gap: 0; }
