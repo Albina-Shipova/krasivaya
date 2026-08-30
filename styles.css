@@ -1097,6 +1097,10 @@ a { color: inherit; text-decoration: none; }
 }
 .brand--foot { flex: none; }
 .foot__name { display: none; }
+.foot__tag {
+  flex-basis: 100%; margin: 2px 0 0; max-width: 60em;
+  font-size: 12px; line-height: 1.5; color: var(--on-dark-dim);
+}
 
 .foot__contacts {
   margin: 0; padding: 0; list-style: none;
@@ -1273,6 +1277,7 @@ a { color: inherit; text-decoration: none; }
 @media (max-width: 760px) {
   .foot__main { flex-direction: column; align-items: flex-start; gap: 14px; }
   .brand--foot,
+  .foot__tag,
   .foot__hours,
   .foot__contacts li:last-child { display: none; }
   .foot__name {
