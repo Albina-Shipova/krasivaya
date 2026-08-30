@@ -202,6 +202,9 @@ a { color: inherit; text-decoration: none; }
 
 .tel { font: 600 13px/1 Manrope, sans-serif; letter-spacing: .02em; }
 
+.nav-toggle { display: none; }
+.mnav { display: none; }
+
 /* ---------- Первый экран ---------- */
 
 .hero {
@@ -939,8 +942,9 @@ a { color: inherit; text-decoration: none; }
 }
 .lightbox__close:hover { background: var(--peach-glow); }
 
-/* Плавающая кнопка связи — мобильный */
+/* Плавающие кнопки — мобильный */
 .fab { display: none; }
+.totop { display: none; }
 
 /* ---------- Основательница ---------- */
 
@@ -1114,7 +1118,10 @@ a { color: inherit; text-decoration: none; }
   display: grid; grid-template-columns: 1fr auto auto;
   gap: 14px clamp(20px, 3vw, 40px); align-items: center;
 }
+.foot__legalbox { display: grid; gap: 6px; }
 .foot__fine { margin: 0; max-width: 52em; font-size: 11px; line-height: 1.5; color: var(--on-dark-dim); }
+.foot__legal { margin: 0; font-size: 11px; color: var(--on-dark-dim); }
+.foot__name { display: none; }
 .foot__copy { margin: 0; font-size: 11px; color: var(--on-dark-dim); white-space: nowrap; }
 .foot__up {
   font: 600 12px/1 Oswald, sans-serif;
@@ -1212,6 +1219,40 @@ a { color: inherit; text-decoration: none; }
   .rows { columns: 1; }
   .nav, .tel { display: none; }
 
+  .nav-toggle {
+    display: grid; gap: 5px; place-content: center;
+    width: 44px; height: 44px; padding: 0;
+    background: none; border: 0; cursor: pointer;
+  }
+  .nav-toggle span {
+    display: block; width: 24px; height: 2px; border-radius: 2px;
+    background: var(--on-dark);
+    transition: transform .25s var(--ease), opacity .2s var(--ease);
+  }
+  .hdr.is-open .nav-toggle span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hdr.is-open .nav-toggle span:nth-child(2) { opacity: 0; }
+  .hdr.is-open .nav-toggle span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  .mnav {
+    display: grid;
+    position: absolute; left: 0; right: 0; top: 100%;
+    padding: 4px var(--pad) 22px;
+    background: rgba(20, 19, 28, .98);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(60, 57, 74, .7);
+    opacity: 0; visibility: hidden; transform: translateY(-8px);
+    transition: opacity .22s var(--ease), transform .22s var(--ease), visibility .22s;
+  }
+  .hdr.is-open .mnav { opacity: 1; visibility: visible; transform: none; }
+  .mnav a {
+    padding: 14px 0;
+    font: 500 15px/1 Manrope, sans-serif; letter-spacing: .02em;
+    color: var(--on-dark);
+    border-bottom: 1px solid rgba(60, 57, 74, .55);
+  }
+  .mnav__tel { font-weight: 600; }
+  .mnav .btn { margin-top: 16px; text-align: center; border-bottom: 0; }
+
   .space__intro,
   .shot--main,
   .shot--tall { grid-column: span 12; }
@@ -1230,6 +1271,24 @@ a { color: inherit; text-decoration: none; }
 }
 
 @media (max-width: 760px) {
+  .foot__main { grid-template-columns: 1fr; gap: 18px; }
+  .foot__tag,
+  .foot__col--contact,
+  .foot__col--sections,
+  .brand--foot,
+  .foot__col--studio .foot__h,
+  .foot__hours,
+  .foot__maplink { display: none; }
+  .foot__name {
+    display: block; margin: 0;
+    font: 500 12px/1 Oswald, sans-serif;
+    letter-spacing: .12em; text-transform: uppercase; color: var(--accent-soft);
+  }
+  /* место под плавающие кнопки «наверх» и «связь», чтобы не перекрывали подвал */
+  .foot { padding: clamp(38px, 9vw, 56px) var(--pad) 96px; }
+  .foot__bar { margin-top: clamp(22px, 6vw, 32px); }
+  .foot__copy { white-space: normal; }
+
   .hero {
     min-height: auto;
     padding-top: clamp(360px, 92vw, 560px);
@@ -1249,6 +1308,16 @@ a { color: inherit; text-decoration: none; }
   .hero__copy { width: 100%; max-width: 650px; }
 
   .fab { display: block; position: fixed; z-index: 95; right: 14px; bottom: 14px; }
+  .foot__up { display: none; }
+  .totop {
+    display: grid; place-content: center;
+    position: fixed; z-index: 95; left: 14px; bottom: 14px;
+    width: 58px; height: 58px;
+    border-radius: 50%; border: 1px solid var(--accent-soft);
+    background: var(--peach); color: var(--on-dark);
+    font: 600 24px/1 Manrope, sans-serif;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .42);
+  }
   .fab__toggle {
     display: grid; place-content: center;
     width: 58px; height: 58px; padding: 0;
@@ -1275,6 +1344,33 @@ a { color: inherit; text-decoration: none; }
 }
 
 @media (max-width: 620px) {
+  .hdr > .btn--sm { display: none; }
+
+  /* --- Единая мобильная сетка расстояний (блок 1) --- */
+  :root {
+    --pad: 24px;
+    --gap-sec: 36px;
+    --gap-air: 46px;
+  }
+  .diag { padding-block: 40px; }
+
+  /* --- Типографика (блок 2) --- */
+  .script { font-size: 36px; }
+  .hero__title { margin-top: 18px; }
+  .hero__lead { max-width: 340px; line-height: 1.55; }
+  .eyebrow { margin-bottom: 16px; }
+  .eyebrow::before { width: 32px; }
+  .diag__media .eyebrow,
+  .proc__head .eyebrow { margin-bottom: 16px; }
+
+  /* --- Бегущая строка (блок 4) --- */
+  .ticker { padding: 14px 0; }
+  .ticker__set { font-size: 14px; gap: 14px; padding-right: 14px; }
+
+  /* --- Направления (блок 5) --- */
+  .proc__track { align-items: flex-start; }
+  .proc__all { width: 100%; }
+
   .hero__actions { flex-direction: column; align-items: stretch; gap: 18px; }
   .hero__actions .btn { width: 100%; }
   .hero__actions .link { align-self: center; }
@@ -1310,8 +1406,34 @@ a { color: inherit; text-decoration: none; }
   .shot--sm { grid-column: span 12; }
   .scores { grid-template-columns: 1fr; }
   .scores li { padding: 16px 18px; }
-  .quotes { grid-template-columns: 1fr; }
-  .quote:nth-child(2), .quote:nth-child(3) { grid-column: 1 / -1; }
+  /* Текстовые отзывы — карусель, все карточки тёмные (как акцентный отзыв) */
+  .quotes {
+    grid-template-columns: none;
+    display: flex; gap: 12px;
+    overflow-x: auto; scroll-snap-type: x mandatory;
+    overscroll-behavior-inline: contain; scrollbar-width: none;
+    margin-inline: calc(var(--pad) * -1);
+    padding: 4px var(--pad) 10px;
+  }
+  .quotes::-webkit-scrollbar { display: none; }
+  .quote,
+  .quote:nth-child(1),
+  .quote:nth-child(4) {
+    grid-column: auto; grid-row: auto;
+    flex: 0 0 82%; scroll-snap-align: start;
+    justify-content: flex-start;
+  }
+  .quote.rv { opacity: 1; transform: none; }
+  .quote:nth-child(1) blockquote,
+  .quote blockquote { font-size: 15.5px; line-height: 1.5; }
+
+  .trust.surf--paper .quote,
+  .trust.surf--paper .quote .quote__who b { color: var(--on-dark); }
+  .trust.surf--paper .quote {
+    background: var(--peach); border-color: var(--peach);
+  }
+  .trust.surf--paper .quote .quote__who span { color: rgba(238, 238, 244, .65); }
+  .quote__stars { color: #cbaab3; }
   .cn__row { grid-template-columns: 1fr; gap: 4px; }
   .founder__tag { position: static; transform: none; justify-items: center; margin-top: 16px; }
   .foot__main { grid-template-columns: 1fr; gap: 24px; }

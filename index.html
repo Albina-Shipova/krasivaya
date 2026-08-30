@@ -66,6 +66,21 @@
 
   <a class="tel" href="tel:+79651952277">+7 965 195-22-77</a>
   <a class="btn btn--sm" href="https://n478417.yclients.com/" target="_blank" rel="noopener">Записаться</a>
+
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Меню">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="mnav" id="mobile-nav">
+    <a href="#proc">Процедуры</a>
+    <a href="price.html">Цены</a>
+    <a href="#portfolio">Работы</a>
+    <a href="#studio">Студия</a>
+    <a href="#reviews">Отзывы</a>
+    <a href="#contacts">Контакты</a>
+    <a class="mnav__tel" href="tel:+79651952277">+7 965 195-22-77</a>
+    <a class="btn btn--sm" href="https://n478417.yclients.com/" target="_blank" rel="noopener">Записаться</a>
+  </div>
 </header>
 
 <main id="main">
@@ -561,18 +576,19 @@
       <a class="brand brand--foot" href="#top" aria-label="Красивая Ты — наверх">
         <img class="brand__logo" src="assets/images/logo.png" alt="Красивая Ты" width="275" height="83">
       </a>
+      <p class="foot__name">Студия «Красивая&nbsp;Ты»</p>
       <p class="foot__tag">Студия красоты Натальи Манохиной в Раменском. Перманентный макияж, косметология, ногтевой сервис и уход за телом.</p>
     </div>
 
-    <div class="foot__col">
+    <div class="foot__col foot__col--studio">
       <h3 class="foot__h">Студия</h3>
       <p>Высоковольтная ул., 22<br>ЖК «Парк на Фабричной», Раменское</p>
       <p><a href="tel:+79651952277">+7 965 195-22-77</a></p>
-      <p>Ежедневно, 10:00–20:00</p>
-      <a href="https://yandex.ru/maps/org/29792745953/" target="_blank" rel="noopener">На Яндекс Картах</a>
+      <p class="foot__hours">Ежедневно, 10:00–20:00</p>
+      <a class="foot__maplink" href="https://yandex.ru/maps/org/29792745953/" target="_blank" rel="noopener">На Яндекс Картах</a>
     </div>
 
-    <nav class="foot__col" aria-label="Записаться и написать">
+    <nav class="foot__col foot__col--contact" aria-label="Записаться и написать">
       <h3 class="foot__h">Связаться</h3>
       <a href="https://n478417.yclients.com/" target="_blank" rel="noopener">Записаться онлайн</a>
       <a href="https://wa.me/79651952277" target="_blank" rel="noopener">WhatsApp</a>
@@ -580,7 +596,7 @@
       <a href="https://vk.ru/id162018962" target="_blank" rel="noopener">ВКонтакте</a>
     </nav>
 
-    <nav class="foot__col" aria-label="Разделы сайта">
+    <nav class="foot__col foot__col--sections" aria-label="Разделы сайта">
       <h3 class="foot__h">Разделы</h3>
       <!-- ВРЕМЕННО СКРЫТО: <a href="#napravleniya">Направления</a> -->
       <a href="price.html">Цены</a>
@@ -591,11 +607,14 @@
   </div>
 
   <div class="foot__bar">
-    <p class="foot__fine">
-      Имеются противопоказания. Необходима консультация специалиста.
-      Информация на сайте не является публичной офертой.
-    </p>
-    <p class="foot__copy">© 2026 «Красивая&nbsp;Ты»</p>
+    <div class="foot__legalbox">
+      <p class="foot__fine">
+        Имеются противопоказания. Необходима консультация специалиста.
+        Информация на сайте не является публичной офертой.
+      </p>
+      <p class="foot__legal">ИНН&nbsp;0000000000</p>
+    </div>
+    <p class="foot__copy">© 2026 «Красивая&nbsp;Ты». Все&nbsp;права&nbsp;защищены.</p>
     <a class="foot__up" href="#top">Наверх ↑</a>
   </div>
 </footer>
@@ -611,6 +630,9 @@
   </div>
   <button class="fab__toggle" type="button" aria-expanded="false" aria-label="Способы связи">Связь</button>
 </div>
+
+<!-- Плавающая кнопка «наверх» (только мобильный) -->
+<a class="totop" href="#top" aria-label="Наверх">↑</a>
 
 <!-- Просмотр скриншота отзыва -->
 <div class="lightbox" id="lightbox" aria-hidden="true">
@@ -672,6 +694,20 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   });
+
+  (() => {
+    const hdr = document.querySelector('.hdr');
+    const btn = hdr && hdr.querySelector('.nav-toggle');
+    if (!btn) return;
+    const set = (open) => {
+      hdr.classList.toggle('is-open', open);
+      btn.setAttribute('aria-expanded', String(open));
+    };
+    btn.addEventListener('click', () => set(!hdr.classList.contains('is-open')));
+    hdr.querySelectorAll('.mnav a').forEach((a) => a.addEventListener('click', () => set(false)));
+    document.addEventListener('click', (e) => { if (!hdr.contains(e.target)) set(false); });
+    window.addEventListener('resize', () => { if (window.innerWidth > 1080) set(false); });
+  })();
 
   (() => {
     const fab = document.getElementById('fab');
