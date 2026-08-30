@@ -1086,40 +1086,44 @@ a { color: inherit; text-decoration: none; }
 /* ---------- Подвал ---------- */
 
 .foot {
-  padding: clamp(46px, 6vw, 74px) var(--pad);
+  padding: clamp(36px, 4.4vw, 54px) var(--pad);
   background: #1b1a24;
   border-top: 1px solid var(--ember);
 }
 .foot__main {
   max-width: var(--max); margin: 0 auto;
-  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr;
-  gap: clamp(28px, 5vw, 60px);
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: 12px clamp(20px, 3vw, 40px);
 }
-.foot__brand { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
-.foot__tag { margin: 0; max-width: 24em; font-size: 12px; line-height: 1.55; color: var(--on-dark-dim); }
+.brand--foot { flex: none; }
+.foot__name { display: none; }
 
-.foot__col { display: flex; flex-direction: column; gap: 9px; font-size: 13px; line-height: 1.5; }
-.foot__col p { margin: 0; color: var(--on-dark-dim); }
-.foot__col a {
-  width: fit-content; color: var(--on-dark);
+.foot__contacts {
+  margin: 0; padding: 0; list-style: none;
+  display: flex; flex-wrap: wrap; align-items: baseline;
+  gap: 4px 0;
+  font-size: 13px; line-height: 1.5; color: var(--on-dark-dim);
+}
+.foot__contacts li { white-space: nowrap; }
+.foot__contacts a {
+  color: var(--on-dark);
   border-bottom: 1px solid transparent;
   transition: border-color .2s var(--ease);
 }
-.foot__col a:hover { border-bottom-color: var(--accent-soft); }
-.foot__h {
-  margin: 0 0 4px;
-  font: 500 11px/1 Oswald, sans-serif;
-  letter-spacing: .14em; text-transform: uppercase; color: var(--accent-soft);
+.foot__contacts a:hover { border-bottom-color: var(--accent-soft); }
+.foot__contacts li:not(:last-child)::after {
+  content: "·";
+  margin: 0 clamp(10px, 1.6vw, 18px);
+  color: var(--ember);
 }
 
 .foot__bar {
-  max-width: var(--max); margin: clamp(30px, 4vw, 46px) auto 0;
-  padding-top: 22px; border-top: 1px solid var(--ember);
+  max-width: var(--max); margin: clamp(20px, 2.6vw, 30px) auto 0;
+  padding-top: 20px; border-top: 1px solid var(--ember);
   display: grid; grid-template-columns: 1fr auto auto;
-  gap: 14px clamp(20px, 3vw, 40px); align-items: center;
+  gap: 12px clamp(20px, 3vw, 40px); align-items: center;
 }
 .foot__fine { margin: 0; max-width: 52em; font-size: 11px; line-height: 1.5; color: var(--on-dark-dim); }
-.foot__name { display: none; }
 .foot__copy { margin: 0; font-size: 11px; color: var(--on-dark-dim); }
 .foot__up {
   font: 600 12px/1 Oswald, sans-serif;
@@ -1212,8 +1216,6 @@ a { color: inherit; text-decoration: none; }
   .trust__top,
   .founder__grid,
   .contacts__grid { grid-template-columns: 1fr; }
-  .foot__main { grid-template-columns: 1fr 1fr; }
-  .foot__brand { grid-column: 1 / -1; }
   .rows { columns: 1; }
   .nav, .tel { display: none; }
 
@@ -1269,23 +1271,20 @@ a { color: inherit; text-decoration: none; }
 }
 
 @media (max-width: 760px) {
-  .foot__main { grid-template-columns: 1fr; gap: 18px; }
-  .foot__tag,
-  .foot__col--contact,
-  .foot__col--sections,
+  .foot__main { flex-direction: column; align-items: flex-start; gap: 14px; }
   .brand--foot,
-  .foot__col--studio .foot__h,
   .foot__hours,
-  .foot__maplink { display: none; }
+  .foot__contacts li:last-child { display: none; }
   .foot__name {
     display: block; margin: 0;
     font: 500 12px/1 Oswald, sans-serif;
     letter-spacing: .12em; text-transform: uppercase; color: var(--accent-soft);
   }
+  .foot__contacts { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .foot__contacts li:not(:last-child)::after { display: none; }
   /* место под плавающие кнопки «наверх» и «связь», чтобы не перекрывали подвал */
   .foot { padding: clamp(38px, 9vw, 56px) var(--pad) 96px; }
   .foot__bar { margin-top: clamp(22px, 6vw, 32px); }
-  .foot__copy { white-space: normal; }
 
   /* Первый экран: фото-полосой сверху, затем отдельный текстовый блок (блок 3) */
   .hero {
@@ -1471,6 +1470,5 @@ a { color: inherit; text-decoration: none; }
   .quote__stars { color: #cbaab3; }
   .cn__row { grid-template-columns: 1fr; gap: 4px; }
   .founder__tag { position: static; transform: none; justify-items: center; margin-top: 16px; }
-  .foot__main { grid-template-columns: 1fr; gap: 24px; }
   .foot__bar { grid-template-columns: 1fr; gap: 12px; }
 }

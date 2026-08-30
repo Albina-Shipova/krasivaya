@@ -572,38 +572,16 @@
 
 <footer class="foot surf surf--noir">
   <div class="foot__main">
-    <div class="foot__brand">
-      <a class="brand brand--foot" href="#top" aria-label="Красивая Ты — наверх">
-        <img class="brand__logo" src="assets/images/logo.png" alt="Красивая Ты" width="275" height="83">
-      </a>
-      <p class="foot__name">Студия «Красивая&nbsp;Ты»</p>
-      <p class="foot__tag">Студия красоты Натальи Манохиной в Раменском. Перманентный макияж, косметология, ногтевой сервис и уход за телом.</p>
-    </div>
-
-    <div class="foot__col foot__col--studio">
-      <h3 class="foot__h">Студия</h3>
-      <p>Высоковольтная ул., 22<br>ЖК «Парк на Фабричной», Раменское</p>
-      <p><a href="tel:+79651952277">+7 965 195-22-77</a></p>
-      <p class="foot__hours">Ежедневно, 10:00–20:00</p>
-      <a class="foot__maplink" href="https://yandex.ru/maps/org/29792745953/" target="_blank" rel="noopener">На Яндекс Картах</a>
-    </div>
-
-    <nav class="foot__col foot__col--contact" aria-label="Записаться и написать">
-      <h3 class="foot__h">Связаться</h3>
-      <a href="https://n478417.yclients.com/" target="_blank" rel="noopener">Записаться онлайн</a>
-      <a href="https://wa.me/79651952277" target="_blank" rel="noopener">WhatsApp</a>
-      <a href="https://t.me/krasivayati" target="_blank" rel="noopener">Telegram</a>
-      <a href="https://vk.ru/id162018962" target="_blank" rel="noopener">ВКонтакте</a>
-    </nav>
-
-    <nav class="foot__col foot__col--sections" aria-label="Разделы сайта">
-      <h3 class="foot__h">Разделы</h3>
-      <!-- ВРЕМЕННО СКРЫТО: <a href="#napravleniya">Направления</a> -->
-      <a href="price.html">Цены</a>
-      <a href="#portfolio">Работы</a>
-      <a href="#reviews">Отзывы</a>
-      <a href="#contacts">Контакты</a>
-    </nav>
+    <a class="brand brand--foot" href="#top" aria-label="Красивая Ты — наверх">
+      <img class="brand__logo" src="assets/images/logo.png" alt="Красивая Ты" width="275" height="83">
+    </a>
+    <p class="foot__name">Студия «Красивая&nbsp;Ты»</p>
+    <ul class="foot__contacts">
+      <li>Высоковольтная&nbsp;ул., 22, ЖК «Парк&nbsp;на&nbsp;Фабричной», Раменское</li>
+      <li><a href="tel:+79651952277">+7&nbsp;965&nbsp;195-22-77</a></li>
+      <li class="foot__hours">Ежедневно, 10:00–20:00</li>
+      <li><a class="foot__maplink" href="https://yandex.ru/maps/org/29792745953/" target="_blank" rel="noopener">На Яндекс&nbsp;Картах</a></li>
+    </ul>
   </div>
 
   <div class="foot__bar">
@@ -773,7 +751,7 @@
       '.contacts__actions', '.contacts__social', '.map',
       '.price__head > div > *', '.price__note', '.price__fine', '.price--page__back',
       '.cat', '.cat__about',
-      '.foot__brand', '.foot__col'
+      '.foot__main', '.foot__bar > *'
     ].join(',');
 
     const els = document.querySelectorAll(SEL);
@@ -782,7 +760,7 @@
     [['.hero__copy > *', 85], ['.founder__copy > *', 75], ['.cta__inner > *', 75],
      ['.proc__card', 55], ['.portfolio__slide', 40], ['.deal', 80], ['.shot', 75],
      ['.scores li', 65], ['.quote', 85], ['.revs__item', 50], ['.cat', 40],
-     ['.cn__row', 60], ['.foot__col', 60], ['.price__head > div > *', 75]
+     ['.cn__row', 60], ['.foot__bar > *', 50], ['.price__head > div > *', 75]
     ].forEach(([sel, step]) => {
       document.querySelectorAll(sel).forEach((el, i) => {
         el.style.setProperty('--rd', Math.min(i, 3) * step);
