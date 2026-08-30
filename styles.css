@@ -35,6 +35,8 @@
   html { scroll-behavior: smooth; }
 }
 
+html, body { overflow-x: clip; }
+
 body {
   margin: 0;
   background: var(--noir);
@@ -1394,8 +1396,10 @@ a { color: inherit; text-decoration: none; }
   .contacts__actions .btn { width: 100%; }
 
   /* Диагностика — компактнее (блок 6) */
-  .diag__figure { aspect-ratio: 1 / 1.15; margin-top: 16px; }
+  .diag__figure { aspect-ratio: 1 / 1.1; margin-top: 16px; }
   .diag__figure--wide { aspect-ratio: 4 / 3; }
+  /* аппарат крупнее в кадре — съедаем пустой светлый фон по краям */
+  .diag__figure:not(.diag__figure--wide) img { transform: scale(1.16); object-position: 50% 46%; }
   .diag__grid { gap: 22px; }
   .diag__lead { font-size: 16px; line-height: 1.5; }
   .diag__list { margin-top: 20px; }
