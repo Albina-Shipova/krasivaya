@@ -218,7 +218,7 @@ a { color: inherit; text-decoration: none; }
 .hero::after {
   content: "";
   position: absolute; inset: 0 0 0 34%;
-  background: url("assets/images/hero.png") center center / cover no-repeat;
+  background: url("assets/images/hero.webp") center center / cover no-repeat;
 }
 
 /* Фото заходит под текстовую область и растворяется в графитовом фоне */

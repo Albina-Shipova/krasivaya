@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /SEO.md
+Disallow: /price.txt
+Disallow: /contacts.txt
+
+Sitemap: https://krasivaya.asama.site/sitemap.xml
