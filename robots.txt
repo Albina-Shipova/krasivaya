@@ -3,5 +3,6 @@ Allow: /
 Disallow: /SEO.md
 Disallow: /price.txt
 Disallow: /contacts.txt
+Disallow: /seo-otchet.html
 
 Sitemap: https://krasivaya.asama.site/sitemap.xml
