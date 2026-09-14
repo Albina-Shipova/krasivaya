@@ -31,7 +31,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Marck+Script&display=swap">
   <link rel="preload" as="image" href="assets/images/hero.webp">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=10">
 
   <script type="application/ld+json">
   {
@@ -131,11 +131,14 @@
     <a href="#portfolio">Работы</a>
     <a href="#studio">Студия</a>
     <a href="#reviews">Отзывы</a>
+    <a href="#faq">FAQ</a>
     <a href="#contacts">Контакты</a>
   </nav>
 
-  <a class="tel" href="tel:+79651952277">+7 965 195-22-77</a>
-  <a class="btn btn--sm" href="https://n478417.yclients.com/" target="_blank" rel="noopener">Записаться</a>
+  <div class="hdr__actions">
+    <a class="tel" href="tel:+79651952277"><svg class="hdr__phone-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7.5 3.5 4.5 5c-1 5.8 8.7 15.5 14.5 14.5l1.5-3-4.5-3-2 2c-2.2-1.1-4.4-3.3-5.5-5.5l2-2-3-4.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>+7 965 195-22-77</span></a>
+    <a class="btn btn--sm" href="https://n478417.yclients.com/" target="_blank" rel="noopener">Записаться</a>
+  </div>
 
   <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Меню">
     <span></span><span></span><span></span>
@@ -147,6 +150,7 @@
     <a href="#portfolio">Работы</a>
     <a href="#studio">Студия</a>
     <a href="#reviews">Отзывы</a>
+    <a href="#faq">FAQ</a>
     <a href="#contacts">Контакты</a>
     <a class="mnav__tel" href="tel:+79651952277">+7 965 195-22-77</a>
     <a class="btn btn--sm" href="https://n478417.yclients.com/" target="_blank" rel="noopener">Записаться</a>
@@ -376,7 +380,7 @@
       </figure>
 
       <figure class="shot shot--sm">
-        <img src="assets/images/salon-01.webp" alt="Отдельный кабинет аппаратной косметологии" loading="lazy" width="960" height="1280">
+        <img src="assets/images/cosmetology-room.webp" alt="Отдельный кабинет аппаратной косметологии" loading="lazy" width="1086" height="1448">
         <figcaption>Кабинет косметологии</figcaption>
       </figure>
     </div>
@@ -572,6 +576,77 @@
     </div>
   </section>
 
+  <section class="faq surf surf--cocoa" id="faq" aria-labelledby="faq-title" itemscope itemtype="https://schema.org/FAQPage">
+    <div class="faq__inner">
+      <div class="faq__intro">
+        <p class="eyebrow">Частые вопросы</p>
+        <h2 class="h2" id="faq-title">Вопросы<br>и ответы</h2>
+        <p class="faq__lead">Всё, что хочется уточнить перед визитом в «Красивая Ты».</p>
+        <div class="faq__art" aria-hidden="true"></div>
+      </div>
+      <div class="faq__list">
+        <div class="faq__row faq__row--featured">
+          <div class="faq__item faq__item--left faq__item--featured" style="--faq-order: 1" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <meta itemprop="name" content="Какие косметологические процедуры можно сделать в Раменском в салоне «Красивая Ты»?">
+            <button class="faq__question" id="faq-question-1" type="button" aria-expanded="true" aria-controls="faq-answer-1" aria-label="Какие косметологические процедуры можно сделать в Раменском в салоне «Красивая Ты»?"><span>Какие процедуры можно сделать?</span><span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">В салоне «Красивая Ты» в Раменском доступны процедуры для ухода за кожей лица и тела, аппаратная косметология, чистки и пилинги, процедуры для улучшения тонуса и качества кожи, лазерная эпиляция, удаление татуажа и тату и другие эстетические услуги. Подходящую процедуру лучше подбирать с учётом состояния кожи, желаемого результата и возможных противопоказаний. Все услуги и цены можно посмотреть в <a href="price.html">прайсе студии</a>.</p><div class="faq__signature" aria-hidden="true"><svg viewBox="0 0 140 120" fill="none"><path d="M74 114C71 84 80 50 103 15M80 82C49 79 33 57 28 39C53 37 73 48 80 82ZM87 63C85 36 98 17 119 9C128 34 111 55 87 63Z" stroke="currentColor" stroke-width="1.2"/></svg><span>Забота<br>о вашей красоте ♡</span></div></div>
+          </div>
+        </div>
+        <div class="faq__columns">
+          <div class="faq__column faq__column--left">
+          <div class="faq__item faq__item--left" style="--faq-order: 2" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <meta itemprop="name" content="Как понять, какая процедура для лица мне подходит?">
+            <button class="faq__question" id="faq-question-2" type="button" aria-expanded="true" aria-controls="faq-answer-2" aria-label="Как понять, какая процедура для лица мне подходит?"><span>Как выбрать процедуру для лица?</span><span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Выбор процедуры зависит от состояния кожи и задачи: сухость, тусклый цвет лица, расширенные поры, снижение упругости, неровный рельеф или возрастные изменения. Специалист оценивает состояние кожи и помогает подобрать подходящий вариант ухода или аппаратной процедуры. Это позволяет не выбирать процедуру только по рекламе или советам знакомых.</p></div>
+          </div>
+          <div class="faq__item faq__item--left" style="--faq-order: 3" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <meta itemprop="name" content="Что лучше: чистка лица или пилинг?">
+            <button class="faq__question" id="faq-question-3" type="button" aria-expanded="true" aria-controls="faq-answer-3" aria-label="Что лучше: чистка лица или пилинг?"><span>Чистка лица или пилинг?</span><span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Чистка и пилинг решают разные задачи. Чистка помогает удалить загрязнения и содержимое пор, а пилинг направлен на обновление кожи, улучшение её текстуры и тона. Иногда процедуры могут дополнять друг друга, но схема ухода подбирается индивидуально с учётом типа и чувствительности кожи.</p></div>
+          </div>
+          <div class="faq__item faq__item--left" style="--faq-order: 5" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <meta itemprop="name" content="Какие процедуры подходят при расширенных порах и неровном рельефе кожи?">
+            <button class="faq__question" id="faq-question-5" type="button" aria-expanded="true" aria-controls="faq-answer-5" aria-label="Какие процедуры подходят при расширенных порах и неровном рельефе кожи?"><span>Что делать при расширенных порах?</span><span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">При расширенных порах и неровной текстуре кожи могут использоваться чистки, пилинги и аппаратные процедуры. Метод подбирается после оценки состояния кожи, поскольку важно учитывать её чувствительность, наличие воспалений и другие особенности. Иногда лучший результат даёт не одна процедура, а последовательный курс ухода.</p></div>
+          </div>
+          <div class="faq__item faq__item--right" style="--faq-order: 6" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <meta itemprop="name" content="Можно ли делать косметологические процедуры перед важным событием?">
+            <button class="faq__question" id="faq-question-6" type="button" aria-expanded="true" aria-controls="faq-answer-6" aria-label="Можно ли делать косметологические процедуры перед важным событием?"><span>Можно ли делать процедуры перед событием?</span><span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Можно, но не все процедуры стоит планировать непосредственно перед мероприятием. Некоторые уходы дают быстрый визуальный эффект и почти не требуют восстановления, а после более интенсивных процедур коже может понадобиться несколько дней. Поэтому перед свадьбой, фотосессией, отпуском или другим событием лучше заранее обсудить сроки со специалистом.</p></div>
+          </div>
+          </div>
+          <div class="faq__column faq__column--right">
+          <div class="faq__item faq__item--right" style="--faq-order: 7" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <meta itemprop="name" content="Как подготовиться к приёму косметолога?">
+            <button class="faq__question" id="faq-question-7" type="button" aria-expanded="true" aria-controls="faq-answer-7" aria-label="Как подготовиться к приёму косметолога?"><span>Как подготовиться к косметологу?</span><span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__answer" id="faq-answer-7" role="region" aria-labelledby="faq-question-7" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Специальная подготовка обычно не требуется, однако перед некоторыми процедурами могут быть индивидуальные рекомендации. На консультации важно рассказать специалисту об особенностях кожи, ранее проведённых процедурах, используемых косметических средствах и возможных противопоказаниях. Это помогает подобрать наиболее подходящий и безопасный вариант ухода.</p></div>
+          </div>
+          <div class="faq__item faq__item--right" style="--faq-order: 8" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <meta itemprop="name" content="Больно ли делать лазерную эпиляцию?">
+            <button class="faq__question" id="faq-question-8" type="button" aria-expanded="true" aria-controls="faq-answer-8" aria-label="Больно ли делать лазерную эпиляцию?"><span>Больно ли делать лазерную эпиляцию?</span><span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__answer" id="faq-answer-8" role="region" aria-labelledby="faq-question-8" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Ощущения во время лазерной эпиляции индивидуальны и зависят от зоны обработки, чувствительности кожи и используемых параметров оборудования. Чаще всего ощущается тепло или кратковременное покалывание. Перед процедурой специалист объясняет правила подготовки и подбирает параметры с учётом особенностей кожи и волос.</p></div>
+          </div>
+          <div class="faq__item faq__item--right" style="--faq-order: 9" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <meta itemprop="name" content="Сколько процедур лазерной эпиляции обычно требуется?">
+            <button class="faq__question" id="faq-question-9" type="button" aria-expanded="true" aria-controls="faq-answer-9" aria-label="Сколько процедур лазерной эпиляции обычно требуется?"><span>Сколько нужно процедур эпиляции?</span><span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__answer" id="faq-answer-9" role="region" aria-labelledby="faq-question-9" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Количество процедур зависит от зоны, структуры и цвета волос, особенностей организма и других факторов. Волосы находятся на разных стадиях роста, поэтому одной процедуры обычно недостаточно. График и ориентировочное количество сеансов специалист определяет индивидуально после оценки зоны обработки.</p></div>
+          </div>
+          <div class="faq__item faq__item--right" style="--faq-order: 10" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <meta itemprop="name" content="Есть ли противопоказания у косметологических процедур?">
+            <button class="faq__question" id="faq-question-10" type="button" aria-expanded="true" aria-controls="faq-answer-10" aria-label="Есть ли противопоказания у косметологических процедур?"><span>Есть ли противопоказания?</span><span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__answer" id="faq-answer-10" role="region" aria-labelledby="faq-question-10" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Да, у аппаратных, лазерных и других косметологических процедур могут быть противопоказания. Они зависят от конкретной методики, состояния кожи и общего состояния здоровья. Перед процедурой специалист уточняет важную информацию и при необходимости рекомендует выбрать другой метод или перенести процедуру.</p></div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="faq__help">
+        <span class="faq__chat" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M20 11.5a8 8 0 0 1-8 7.5 9 9 0 0 1-3.5-.7L4 20l1.3-4A7 7 0 0 1 4 11.5a8 8 0 0 1 16 0Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+        <p>Не нашли нужный ответ?<br>Напишите нам в <a href="https://wa.me/79651952277" target="_blank" rel="noopener">WhatsApp</a> или <a href="tel:+79651952277">позвоните</a>.</p>
+        <span class="faq__availability">Мы всегда на связи</span>
+      </div>
+    </div>
+  </section>
+
   <section class="cta surf surf--paper" id="cta">
     <div class="cta__inner">
       <p class="eyebrow eyebrow--dark">Перед записью</p>
@@ -687,6 +762,55 @@
 </div>
 
 <script>
+  /* Подсветка текущего раздела в обычном и мобильном меню. */
+  (() => {
+    const header = document.querySelector('.hdr');
+    if (!header) return;
+    const links = [...header.querySelectorAll('.nav a[href^="#"], .mnav a[href^="#"]')];
+    const sections = [...new Set(links.map(link => document.getElementById(link.hash.slice(1))).filter(Boolean))];
+    let pending = false;
+    const update = () => {
+      pending = false;
+      const marker = header.getBoundingClientRect().height + 32;
+      const visible = sections.filter(section => section.getClientRects().length && section.getBoundingClientRect().height > 0);
+      let current = null;
+      visible.forEach(section => {
+        if (section.getBoundingClientRect().top <= marker) current = section;
+      });
+      if (window.scrollY > 0 && Math.ceil(window.scrollY + window.innerHeight) >= document.documentElement.scrollHeight - 2) current = visible[visible.length - 1] || current;
+      links.forEach(link => {
+        const active = Boolean(current && link.hash === '#' + current.id);
+        link.classList.toggle('is-current', active);
+        if (active) link.setAttribute('aria-current', 'location');
+        else link.removeAttribute('aria-current');
+      });
+    };
+    const schedule = () => {
+      if (!pending) { pending = true; requestAnimationFrame(update); }
+    };
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule);
+    window.addEventListener('load', schedule);
+    if ('ResizeObserver' in window) new ResizeObserver(schedule).observe(document.querySelector('main'));
+    update();
+  })();
+  /* Один открытый ответ внутри своей колонки; без JS ответы доступны. */
+  (() => {
+    const faq = document.getElementById('faq');
+    if (!faq) return;
+    const buttons = [...faq.querySelectorAll('.faq__question')];
+    const setOpen = (button, open) => {
+      button.setAttribute('aria-expanded', String(open));
+      document.getElementById(button.getAttribute('aria-controls')).hidden = !open;
+    };
+    buttons.forEach((button) => {
+      setOpen(button, button === buttons[0]);
+      button.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') !== 'true';
+        buttons.forEach((other) => setOpen(other, other === button && open));
+      });
+    });
+  })();
   (() => {
     const portfolio = document.querySelector('.portfolio');
     if (!portfolio) return;

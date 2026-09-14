@@ -30,7 +30,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Marck+Script&display=swap">
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=4">
 
   <script type="application/ld+json">
   {
@@ -106,15 +106,18 @@
   <nav class="nav" aria-label="Основная навигация">
     <!-- ВРЕМЕННО СКРЫТО вместе с блоком направлений: <a href="#napravleniya">Направления</a> -->
     <a href="index.html#proc">Процедуры</a>
-    <span class="nav__here">Цены</span>
+    <span class="nav__here" aria-current="page">Цены</span>
     <a href="index.html#portfolio">Работы</a>
     <a href="index.html#studio">Студия</a>
     <a href="index.html#reviews">Отзывы</a>
+    <a href="index.html#faq">FAQ</a>
     <a href="index.html#contacts">Контакты</a>
   </nav>
 
-  <a class="tel" href="tel:+79651952277">+7 965 195-22-77</a>
-  <a class="btn btn--sm" href="https://n478417.yclients.com/" target="_blank" rel="noopener">Записаться</a>
+  <div class="hdr__actions">
+    <a class="tel" href="tel:+79651952277"><svg class="hdr__phone-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7.5 3.5 4.5 5c-1 5.8 8.7 15.5 14.5 14.5l1.5-3-4.5-3-2 2c-2.2-1.1-4.4-3.3-5.5-5.5l2-2-3-4.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span>+7 965 195-22-77</span></a>
+    <a class="btn btn--sm" href="https://n478417.yclients.com/" target="_blank" rel="noopener">Записаться</a>
+  </div>
 
   <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Меню">
     <span></span><span></span><span></span>
@@ -122,10 +125,11 @@
 
   <div class="mnav" id="mobile-nav">
     <a href="index.html#proc">Процедуры</a>
-    <a href="price.html">Цены</a>
+    <a href="price.html" class="is-current" aria-current="page">Цены</a>
     <a href="index.html#portfolio">Работы</a>
     <a href="index.html#studio">Студия</a>
     <a href="index.html#reviews">Отзывы</a>
+    <a href="index.html#faq">FAQ</a>
     <a href="index.html#contacts">Контакты</a>
     <a class="mnav__tel" href="tel:+79651952277">+7 965 195-22-77</a>
     <a class="btn btn--sm" href="https://n478417.yclients.com/" target="_blank" rel="noopener">Записаться</a>
