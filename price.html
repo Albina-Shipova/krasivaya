@@ -25,13 +25,13 @@
   <meta name="twitter:description" content="Перманентный макияж, аппаратная и инъекционная косметология, лазерная эпиляция, ногтевой сервис. Все 153 цены открыто на сайте.">
   <meta name="twitter:image" content="https://xn----7sbah3ak6bjn4gvb.xn--p1ai/og-image.jpg">
 
-  <link rel="icon" href="assets/images/logo-krasivaya-ti.png" type="image/png">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Marck+Script&display=swap">
-  <link rel="stylesheet" href="styles.css?v=20">
+  <link rel="preload" href="assets/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/oswald-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="fonts.css?v=1">
+  <link rel="stylesheet" href="styles.css?v=23">
   <link rel="stylesheet" href="cookie-consent.css?v=1">
 
   <script type="application/ld+json">
@@ -81,7 +81,7 @@
       "@type": "Person",
       "name": "Наталья Манохина",
       "jobTitle": "Основательница студии, мастер перманентного макияжа",
-      "image": "https://xn----7sbah3ak6bjn4gvb.xn--p1ai/assets/images/natalia.JPG"
+      "image": "https://xn----7sbah3ak6bjn4gvb.xn--p1ai/assets/images/natalia-optimized.jpg"
     }
   }
   </script>
@@ -106,7 +106,7 @@
   </a>
 
   <nav class="nav" aria-label="Основная навигация">
-    <!-- ВРЕМЕННО СКРЫТО вместе с блоком направлений: <a href="#napravleniya">Направления</a> -->
+    
     <a href="index.html#proc">Процедуры</a>
     <span class="nav__here" aria-current="page">Цены</span>
     <a href="index.html#portfolio">Работы</a>
@@ -406,7 +406,7 @@
 <footer class="foot surf surf--noir">
   <div class="foot__main">
     <a class="brand brand--foot" href="index.html" aria-label="Красивая Ты — наверх">
-      <img class="brand__logo" src="assets/images/logo.png" alt="Красивая Ты" width="275" height="83">
+      <img class="brand__logo" src="assets/images/logo-header.svg" alt="Красивая Ты" width="1983" height="793" loading="lazy" decoding="async">
     </a>
     <p class="foot__name">Студия «Красивая&nbsp;Ты»</p>
     <p class="foot__tag">Студия красоты Натальи Манохиной в Раменском. Перманентный макияж, косметология, ногтевой сервис и уход за телом.</p>
@@ -429,7 +429,7 @@
   </div>
 </footer>
 
-<!-- Плавающая кнопка связи (только мобильный) -->
+
 <div class="fab" id="fab">
   <div class="fab__menu">
     <a class="fab__item" href="tel:+79651952277">Позвонить</a>
@@ -441,10 +441,10 @@
   <button class="fab__toggle" type="button" aria-expanded="false" aria-label="Способы связи">Связь</button>
 </div>
 
-<!-- Плавающая кнопка «наверх» (только мобильный) -->
+
 <a class="totop" href="#top" aria-label="Наверх">↑</a>
 
-<!-- Просмотр скриншота отзыва -->
+
 <div class="lightbox" id="lightbox" aria-hidden="true">
   <button class="lightbox__close" type="button" aria-label="Закрыть">&times;</button>
   <img class="lightbox__img" src="" alt="Отзыв гостя студии «Красивая Ты»">
@@ -584,7 +584,7 @@
     window.addEventListener('hashchange', openFromHash);
   })();
 
-  /* Появление блоков при скролле */
+  
   (() => {
     if (!('IntersectionObserver' in window)) return;
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
@@ -608,7 +608,12 @@
     ].join(',');
 
     const els = document.querySelectorAll(SEL);
-    els.forEach((el) => el.classList.add('rv'));
+    els.forEach((el) => {
+      el.classList.add('rv');
+      if (el.matches('.price__head > div > *, .cat__about')) el.classList.add('rv--left');
+      else if (el.matches('.price__note, .cat')) el.classList.add('rv--right');
+      else if (el.matches('.eyebrow, .price__fine, .foot__bar > *')) el.classList.add('rv--soft');
+    });
 
     [['.hero__copy > *', 85], ['.founder__copy > *', 75], ['.cta__inner > *', 75],
      ['.proc__card', 55], ['.portfolio__slide', 40], ['.deal', 80], ['.shot', 75],
@@ -627,15 +632,15 @@
         io.unobserve(el);
         el.classList.add('rv-in');
         setTimeout(() => {
-          el.classList.remove('rv', 'rv-in');
+          el.classList.remove('rv', 'rv-in', 'rv--left', 'rv--right', 'rv--soft');
           el.style.removeProperty('--rd');
-        }, 1100);
+        }, 1400);
       });
     }, { threshold: 0.1, rootMargin: '0px 0px -4% 0px' });
 
     els.forEach((el) => io.observe(el));
   })();
 </script>
-<script src="cookie-consent.js?v=1"></script>
+<script src="cookie-consent.js?v=2"></script>
 </body>
 </html>
