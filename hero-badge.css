@@ -1,0 +1,24 @@
+.hero-good-place {
+  position: absolute;
+  z-index: 3;
+  right: var(--pad);
+  top: var(--hero-badge-top, min(calc(100% - 172px), calc(100svh - 244px)));
+  display: block;
+  width: 140px;
+}
+.hero-good-place::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -24px;
+  background: radial-gradient(ellipse, rgba(16,15,24,.7) 15%, rgba(16,15,24,.4) 48%, transparent 72%);
+  pointer-events: none;
+}
+.hero-good-place img { display: block; width: 100%; height: auto; }
+.hero-good-place:focus-visible { outline: 2px solid var(--peach); outline-offset: 6px; }
+@media (max-width: 760px) {
+  .hero-good-place { width: 110px; right: 24px; top: 206px; }
+}
+@media (max-width: 620px) {
+  .hero-good-place { width: 104px; top: 192px; }
+}

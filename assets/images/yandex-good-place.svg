@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+  <g fill="#e8e6ee">
+    <path d="M50 4c-9.1 0-16.5 7.3-16.5 16.3 0 11.1 12.5 19.3 15 26.1a1.6 1.6 0 0 0 3 0C54 39.6 66.5 31.4 66.5 20.3 66.5 11.3 59.1 4 50 4Zm0 9a7.3 7.3 0 1 1 0 14.6A7.3 7.3 0 0 1 50 13Z"/>
+    <g opacity=".75">
+      <path d="M19 87c-8-8-12-19-10-31" fill="none" stroke="#e8e6ee" stroke-width="1.4" stroke-linecap="round"/>
+      <path d="M10 66C3 64 3 59 5 55c5 2 7 6 5 11Zm1 9C4 73 3 68 4 64c6 1 9 5 7 11Zm4 8C8 83 5 79 5 74c6 0 10 3 10 9Zm6 6c-7 2-12-1-14-5 6-2 11-1 14 5Z"/>
+      <g transform="translate(100 0) scale(-1 1)">
+        <path d="M19 87c-8-8-12-19-10-31" fill="none" stroke="#e8e6ee" stroke-width="1.4" stroke-linecap="round"/>
+        <path d="M10 66C3 64 3 59 5 55c5 2 7 6 5 11Zm1 9C4 73 3 68 4 64c6 1 9 5 7 11Zm4 8C8 83 5 79 5 74c6 0 10 3 10 9Zm6 6c-7 2-12-1-14-5 6-2 11-1 14 5Z"/>
+      </g>
+    </g>
+    <text x="50" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="8">Яндекс Карты</text>
+    <text x="50" y="74" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700">Хорошее</text>
+    <text x="50" y="88" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" font-weight="700">место</text>
+  </g>
+</svg>
