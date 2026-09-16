@@ -1,5 +1,5 @@
 (() => {
-  const STORAGE_KEY = 'krasivaya_cookie_consent_v1';
+  const STORAGE_KEY = 'krasivaya_cookie_consent_v2';
   const METRIKA_ID = Number(document.querySelector('meta[name="yandex-metrika-id"]')?.content || 0);
   let metrikaLoaded = false;
 
@@ -34,8 +34,14 @@
     </div>`;
   document.body.appendChild(banner);
 
+  const readChoice = () => {
+    try { return localStorage.getItem(STORAGE_KEY); }
+    catch { return null; }
+  };
+
   const save = (value) => {
-    localStorage.setItem(STORAGE_KEY, value);
+    try { localStorage.setItem(STORAGE_KEY, value); }
+    catch {}
     banner.hidden = true;
     if (value === 'accepted') loadMetrika();
     else if (METRIKA_ID > 0) window[`disableYaCounter${METRIKA_ID}`] = true;
@@ -47,7 +53,7 @@
     button.addEventListener('click', () => { banner.hidden = false; banner.querySelector('.cookie-banner__button--accept').focus(); });
   });
 
-  const saved = localStorage.getItem(STORAGE_KEY);
+  const saved = readChoice();
   if (saved === 'accepted') loadMetrika();
   else if (saved !== 'necessary') banner.hidden = false;
 })();
