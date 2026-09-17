@@ -32,9 +32,9 @@
   <link rel="preload" href="assets/fonts/oswald-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="fonts.css?v=1">
   <link rel="preload" as="image" href="assets/images/hero2-optimized.jpg" type="image/jpeg" fetchpriority="high">
-  <link rel="stylesheet" href="styles.css?v=23">
+  <link rel="stylesheet" href="styles.css?v=24">
   <link rel="stylesheet" href="hero-badge.css?v=9">
-  <link rel="stylesheet" href="reviews-redesign.css?v=9">
+  <link rel="stylesheet" href="reviews-redesign.css?v=10">
   <link rel="stylesheet" href="cookie-consent.css?v=1">
 
   <script type="application/ld+json">
@@ -47,6 +47,13 @@
     "url": "https://xn----7sbah3ak6bjn4gvb.xn--p1ai/",
     "image": "https://xn----7sbah3ak6bjn4gvb.xn--p1ai/og-image.jpg",
     "logo": "https://xn----7sbah3ak6bjn4gvb.xn--p1ai/assets/images/logo-krasivaya-ti.png",
+    "legalName": "Индивидуальный предприниматель Манохина Наталья Николаевна",
+    "taxID": "131901602029",
+    "identifier": {
+      "@type": "PropertyValue",
+      "name": "ОГРНИП",
+      "value": "318502700096935"
+    },
     "telephone": "+7 965 195-22-77",
     "priceRange": "₽₽",
     "currenciesAccepted": "RUB",
@@ -172,29 +179,36 @@
 
     <div class="hero__grid">
       <div class="hero__copy">
-        <p class="eyebrow">Раменское · Высоковольтная, 22</p>
+        <p class="eyebrow"><span class="hero__desktop-copy">Раменское · Высоковольтная, 22</span><span class="hero__mobile-copy">Студия красоты<br>в Раменском</span></p>
         <p class="script">Красивая Ты</p>
-        <h1 class="hero__title">Студия красоты<br>Натальи Манохиной</h1>
+        <h1 class="hero__title"><span class="hero__desktop-copy">Студия красоты<br>Натальи Манохиной</span><span class="hero__mobile-copy">Красивая Ты</span></h1>
         <p class="hero__lead">
-          Перманентный макияж, аппаратная косметология, ногтевой сервис и уход за телом —
-          восемь направлений в одном пространстве.
+          <span class="hero__desktop-copy">Перманентный макияж, аппаратная косметология, ногтевой сервис и уход за телом — восемь направлений в одном пространстве.</span>
+          <span class="hero__mobile-copy">Перманентный макияж,<br>косметология, ногтевой сервис<br>и уход за телом.</span>
         </p>
 
         <div class="hero__actions">
           <a class="btn" href="https://n478417.yclients.com/" target="_blank" rel="noopener">Записаться онлайн</a>
-          <a class="link" href="price.html">Смотреть цены</a>
+          <a class="link" href="price.html"><span class="hero__desktop-copy">Смотреть цены</span><span class="hero__mobile-copy">Услуги и цены</span></a>
         </div>
 
         <p class="hero__offer">Бесплатный подбор уходовых средств на консультации</p>
 
         <a class="hero__stats" href="https://yandex.ru/maps/org/29792745953/reviews/" target="_blank" rel="noopener">
           <span class="hero__stat">
+            <span class="hero__stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"/></svg></span>
             <b>5,0</b>
             <span>рейтинг на Яндекс&nbsp;Картах</span>
           </span>
           <span class="hero__stat">
+            <span class="hero__stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c.3-4 2.4-6 6-6s5.7 2 6 6M14 14.5c3.8-.8 6.7 1 7 4.5"/></svg></span>
             <b>234</b>
             <span>оценки клиентов</span>
+          </span>
+          <span class="hero__stat hero__stat--mobile">
+            <span class="hero__stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21c-5-2.8-7.5-6.2-7.5-10.1C8 10.7 10.7 12.2 12 15c1.3-2.8 4-4.3 7.5-4.1 0 3.9-2.5 7.3-7.5 10.1Z"/><path d="M12 15c-2.2-3.1-2.2-6.3 0-9.5 2.2 3.2 2.2 6.4 0 9.5Z"/></svg></span>
+            <b>8</b>
+            <span>направлений в одном пространстве</span>
           </span>
         </a>
       </div>
@@ -500,7 +514,6 @@
       <div class="trust__head">
         <p class="eyebrow">Говорят гости</p>
         <h2 class="h2">234 оценки<br><em>и рейтинг 5,0</em></h2>
-        <a class="link" href="https://yandex.ru/maps/org/29792745953/reviews/" target="_blank" rel="noopener">Все отзывы на Яндекс Картах</a>
       </div>
 
       <ul class="scores">
@@ -759,7 +772,8 @@
   <div class="foot__bar">
     <p class="foot__fine">
       Имеются противопоказания. Необходима консультация специалиста.
-      Информация на сайте не является публичной офертой. ИНН&nbsp;131901602029.
+      Информация на сайте не является публичной офертой.
+      ИП&nbsp;Манохина Наталья Николаевна. ИНН&nbsp;131901602029. ОГРНИП&nbsp;318502700096935.
     </p>
     <p class="foot__copy">© 2026 «Красивая&nbsp;Ты». Все права защищены.</p>
     <p class="foot__legal"><a href="policy.html">Политика обработки данных</a><button class="cookie-settings" type="button" data-cookie-settings>Настройки cookies</button></p>
@@ -1101,7 +1115,7 @@
     update();
   })();
 </script>
-<script src="hero-badge.js?v=3"></script>
+<script src="hero-badge.js?v=4"></script>
 <script src="cookie-consent.js?v=3"></script>
 </body>
 </html>

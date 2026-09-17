@@ -9,7 +9,9 @@
       badge.style.removeProperty('--hero-badge-top');
       return;
     }
-    const top = stats.getBoundingClientRect().top - hero.getBoundingClientRect().top;
+    let offset = 0;
+    for (let el = stats; el && el !== hero; el = el.offsetParent) offset += el.offsetTop;
+    const top = offset + stats.offsetHeight - badge.offsetHeight;
     badge.style.setProperty('--hero-badge-top', `${top}px`);
   };
 
