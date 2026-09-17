@@ -20,5 +20,5 @@
   .hero-good-place { width: 110px; right: 24px; top: 206px; }
 }
 @media (max-width: 620px) {
-  .hero-good-place { width: 104px; top: 192px; }
+  .hero-good-place { display: none; }
 }

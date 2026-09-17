@@ -27,7 +27,7 @@
   banner.setAttribute('role', 'dialog');
   banner.setAttribute('aria-label', 'Настройки cookies');
   banner.innerHTML = `
-    <p class="cookie-banner__text">Мы используем файлы cookie и Яндекс Метрику, чтобы понимать, как посетители пользуются сайтом, и улучшать его работу. Подробнее — в <a href="policy.html">Политике обработки персональных данных</a>.</p>
+    <p class="cookie-banner__text">Мы используем cookie и Яндекс Метрику, чтобы улучшать работу сайта. Подробнее — в <a href="policy.html">Политике обработки персональных данных</a>.</p>
     <div class="cookie-banner__actions">
       <button class="cookie-banner__button cookie-banner__button--necessary" type="button">Только необходимые</button>
       <button class="cookie-banner__button cookie-banner__button--accept" type="button">Согласен</button>

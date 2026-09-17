@@ -11,7 +11,8 @@
     }
     let offset = 0;
     for (let el = stats; el && el !== hero; el = el.offsetParent) offset += el.offsetTop;
-    const top = offset + stats.offsetHeight - badge.offsetHeight;
+    // в SVG снизу прозрачное поле: рисунок кончается на 90% высоты
+    const top = offset + stats.offsetHeight - badge.offsetHeight * 0.9;
     badge.style.setProperty('--hero-badge-top', `${top}px`);
   };
 
