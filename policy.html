@@ -226,6 +226,17 @@
     document.addEventListener('click', (e) => { if (!fab.contains(e.target)) set(false); });
     fab.querySelectorAll('.fab__item').forEach((a) => a.addEventListener('click', () => set(false)));
   })();
+
+  (() => {
+    const targets = [...document.querySelectorAll('.foot__up, .fab, .totop')];
+    if (!targets.length) return;
+    const update = () => {
+      const visible = window.scrollY > 120;
+      targets.forEach((el) => el.classList.toggle('is-visible', visible));
+    };
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+  })();
 </script>
 <script src="cookie-consent.js?v=4"></script>
 </body>

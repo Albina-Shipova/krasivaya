@@ -31,8 +31,9 @@
   <link rel="preload" href="assets/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/oswald-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="fonts.css?v=1">
-  <link rel="preload" as="image" href="assets/images/hero2-optimized.jpg" type="image/jpeg" fetchpriority="high">
-  <link rel="stylesheet" href="styles.css?v=30">
+  <link rel="preload" as="image" href="assets/images/hero2-optimized.webp" type="image/webp" fetchpriority="high" media="(min-width: 621px)">
+  <link rel="preload" as="image" href="assets/images/hero-mobile-flower.webp" type="image/webp" fetchpriority="high" media="(max-width: 620px)">
+  <link rel="stylesheet" href="styles.css?v=31">
   <link rel="stylesheet" href="hero-badge.css?v=10">
   <link rel="stylesheet" href="reviews-redesign.css?v=10">
   <link rel="stylesheet" href="cookie-consent.css?v=2">
@@ -88,11 +89,37 @@
       "bestRating": "5",
       "worstRating": "1"
     },
+    "review": [
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Полина Гудач" },
+        "reviewBody": "Прекрасный персонал работает в салоне! Очень милые и добрые девушки, обслуживание на высоте. Ногти без покрытия выглядят аккуратно и красиво. Одно удовольствие ходить в данный салон!"
+      },
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Мария Е." },
+        "reviewBody": "Отличное место, приятный персонал. Ходила на маникюр к мастеру Анастасии — очень понравилось. Очень аккуратно, мягко и быстро сделала именно то, что хотелось."
+      },
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Наталия Б." },
+        "reviewBody": "Спокойная камерная обстановка, доброжелательный персонал, помещение чистенькое и уютное. Делаю маникюр у Анастасии. Работает качественно, быстро, аккуратно."
+      },
+      {
+        "@type": "Review",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+        "author": { "@type": "Person", "name": "Ксения Абрамова" },
+        "reviewBody": "Нашла своего мастера! Доброжелательный администратор и мастер Анастасия. Всё сделано аккуратно и красиво, помогли подобрать цвет. Обязательно вернусь."
+      }
+    ],
     "founder": {
       "@type": "Person",
       "name": "Наталья Манохина",
       "jobTitle": "Основательница студии, мастер перманентного макияжа",
-      "image": "https://xn----7sbah3ak6bjn4gvb.xn--p1ai/assets/images/natalia-optimized.jpg"
+      "image": "https://xn----7sbah3ak6bjn4gvb.xn--p1ai/assets/images/natalia-optimized.webp"
     },
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -181,7 +208,7 @@
       <div class="hero__copy">
         <p class="eyebrow"><span class="hero__desktop-copy">Раменское · Высоковольтная, 22</span><span class="hero__mobile-copy">Студия красоты<br>в Раменском</span></p>
         <p class="script">Красивая Ты</p>
-        <h1 class="hero__title"><span class="hero__desktop-copy">Студия красоты<br>Натальи Манохиной</span><span class="hero__mobile-copy">Красивая Ты</span></h1>
+        <h1 class="hero__title"><span class="hero__desktop-copy">Студия красоты<br>Натальи Манохиной</span><span class="hero__mobile-copy">Красивая Ты</span><span class="sr-only"> — студия красоты в Раменском: перманентный макияж, косметология, ногтевой сервис</span></h1>
         <p class="hero__lead">
           <span class="hero__desktop-copy">Перманентный макияж, большой спектр косметологических услуг, ногтевой сервис и уход за телом — восемь направлений в одном пространстве.</span>
           <span class="hero__mobile-copy">Перманентный макияж,<br>косметология, ногтевой сервис<br>и уход за телом.</span>
@@ -248,54 +275,102 @@
       </div>
 
       <div class="proc__track" tabindex="0" aria-label="Направления студии «Красивая Ты»">
-        <a class="proc__card" href="price.html#cat-permanent">
-          <span class="proc__num">01</span>
-          <h3 class="proc__name">Перманентный макияж</h3>
-          <p class="proc__text">Брови, губы, межресничное пространство, обновление перманента.</p>
-          <span class="proc__more">Смотреть цены</span>
-        </a>
-        <a class="proc__card" href="price.html#cat-cosmetology">
-          <span class="proc__num">02</span>
-          <h3 class="proc__name">Косметология лица и тела</h3>
-          <p class="proc__text">Большой спектр косметологических услуг — программу подбираем на консультации.</p>
-          <span class="proc__more">Смотреть цены</span>
-        </a>
-        <a class="proc__card" href="price.html#cat-massage">
-          <span class="proc__num">03</span>
-          <h3 class="proc__name">Коррекция фигуры</h3>
-          <p class="proc__text">LPG, Sketch Body, термо-вакуумный массаж, УЗ-кавитация.</p>
-          <span class="proc__more">Смотреть цены</span>
-        </a>
-        <a class="proc__card" href="price.html#cat-epilation">
-          <span class="proc__num">04</span>
-          <h3 class="proc__name">Лазерная эпиляция</h3>
-          <p class="proc__text">Комфортное удаление нежелательных волос на лице и теле.</p>
-          <span class="proc__more">Смотреть цены</span>
-        </a>
-        <a class="proc__card" href="price.html#cat-nails">
-          <span class="proc__num">05</span>
-          <h3 class="proc__name">Маникюр и педикюр</h3>
-          <p class="proc__text">Аппаратная техника, покрытие, наращивание, уход за кожей рук и стоп.</p>
-          <span class="proc__more">Смотреть цены</span>
-        </a>
-        <a class="proc__card" href="price.html#cat-esthetic">
-          <span class="proc__num">06</span>
-          <h3 class="proc__name">Брови и ресницы</h3>
-          <p class="proc__text">Архитектура, окрашивание, ламинирование, долговременная укладка.</p>
-          <span class="proc__more">Смотреть цены</span>
-        </a>
-        <a class="proc__card" href="price.html#cat-tattoo">
-          <span class="proc__num">07</span>
-          <h3 class="proc__name">Удаление татуажа и перманента</h3>
-          <p class="proc__text">Лазер и ремувер — бережное осветление старого пигмента.</p>
-          <span class="proc__more">Смотреть цены</span>
-        </a>
-        <a class="proc__card" href="#diagnostika">
-          <span class="proc__num">08</span>
-          <h3 class="proc__name">Диагностика кожи</h3>
-          <p class="proc__text">Аппаратный анализ по 12 параметрам и персональный план ухода.</p>
-          <span class="proc__more">Узнать больше</span>
-        </a>
+        <details class="proc__card">
+          <summary class="proc__summary">
+            <span class="proc__num">01</span>
+            <h3 class="proc__name">Перманентный макияж</h3>
+            <p class="proc__text">Брови, губы, межресничное пространство, обновление перманента.</p>
+            <span class="proc__more" aria-hidden="true">Подробнее</span>
+          </summary>
+          <div class="proc__expand">
+            <p>Перманентный макияж в студии «Красивая Ты» в Раменском — это оформление бровей, губ и межресничного пространства с индивидуальным подбором формы и оттенка. Мастер учитывает черты лица, естественный цвет кожи и пожелания клиента, чтобы результат выглядел аккуратно и гармонично. Также в студии выполняется обновление ранее сделанного перманентного макияжа. После процедуры мастер рассказывает об особенностях ухода в период заживления и даёт рекомендации для сохранения результата.</p>
+            <a class="proc__cta" href="price.html#cat-permanent">Смотреть цены</a>
+          </div>
+        </details>
+        <details class="proc__card">
+          <summary class="proc__summary">
+            <span class="proc__num">02</span>
+            <h3 class="proc__name">Косметология лица и тела</h3>
+            <p class="proc__text">Большой спектр косметологических услуг — программу подбираем на консультации.</p>
+            <span class="proc__more" aria-hidden="true">Подробнее</span>
+          </summary>
+          <div class="proc__expand">
+            <p>Косметология лица и тела в студии «Красивая Ты» в Раменском включает уходовые и аппаратные процедуры, направленные на улучшение внешнего вида и состояния кожи. Программа подбирается индивидуально с учётом типа кожи, её текущего состояния и поставленной задачи. В студии можно пройти процедуры для очищения, увлажнения, поддержания тонуса кожи и комплексного ухода за лицом и телом. Перед началом курса специалист помогает подобрать подходящие процедуры и их периодичность.</p>
+            <a class="proc__cta" href="price.html#cat-cosmetology">Смотреть цены</a>
+          </div>
+        </details>
+        <details class="proc__card">
+          <summary class="proc__summary">
+            <span class="proc__num">03</span>
+            <h3 class="proc__name">Коррекция фигуры</h3>
+            <p class="proc__text">LPG, Sketch Body, термо-вакуумный массаж, УЗ-кавитация.</p>
+            <span class="proc__more" aria-hidden="true">Подробнее</span>
+          </summary>
+          <div class="proc__expand">
+            <p>Аппаратная коррекция фигуры в Раменском в студии «Красивая Ты» включает LPG-массаж, Sketch Body, термовакуумный массаж и УЗ-кавитацию. Процедуры применяются для работы с силуэтом, тонусом и внешним состоянием кожи тела. Методика и продолжительность курса подбираются индивидуально с учётом особенностей клиента и желаемого результата. Процедуры коррекции фигуры могут использоваться как самостоятельно, так и в составе комплексной программы ухода за телом.</p>
+            <a class="proc__cta" href="price.html#cat-massage">Смотреть цены</a>
+          </div>
+        </details>
+        <details class="proc__card">
+          <summary class="proc__summary">
+            <span class="proc__num">04</span>
+            <h3 class="proc__name">Лазерная эпиляция</h3>
+            <p class="proc__text">Комфортное удаление нежелательных волос на лице и теле.</p>
+            <span class="proc__more" aria-hidden="true">Подробнее</span>
+          </summary>
+          <div class="proc__expand">
+            <p>Лазерная эпиляция в Раменском в студии «Красивая Ты» проводится для различных зон лица и тела. Процедура направлена на постепенное сокращение роста нежелательных волос и подходит для курсового применения. Параметры оборудования подбираются индивидуально с учётом зоны обработки, структуры волос и особенностей кожи. Перед процедурой специалист консультирует клиента по подготовке, интервалам между сеансами и последующему уходу за кожей.</p>
+            <a class="proc__cta" href="price.html#cat-epilation">Смотреть цены</a>
+          </div>
+        </details>
+        <details class="proc__card">
+          <summary class="proc__summary">
+            <span class="proc__num">05</span>
+            <h3 class="proc__name">Маникюр и педикюр</h3>
+            <p class="proc__text">Аппаратная техника, покрытие, наращивание, уход за кожей рук и стоп.</p>
+            <span class="proc__more" aria-hidden="true">Подробнее</span>
+          </summary>
+          <div class="proc__expand">
+            <p>Маникюр и педикюр в студии «Красивая Ты» в Раменском включают аппаратную обработку ногтей и кутикулы, покрытие гель-лаком, наращивание ногтей и уход за кожей рук и стоп. Мастер помогает подобрать форму, длину и оттенок покрытия в соответствии с пожеланиями клиента. В работе уделяется внимание аккуратной обработке ногтевой пластины, кутикулы и кожи. В студии можно записаться как на отдельный маникюр или педикюр, так и на комплексный уход.</p>
+            <a class="proc__cta" href="price.html#cat-nails">Смотреть цены</a>
+          </div>
+        </details>
+        <details class="proc__card">
+          <summary class="proc__summary">
+            <span class="proc__num">06</span>
+            <h3 class="proc__name">Брови и ресницы</h3>
+            <p class="proc__text">Архитектура, окрашивание, ламинирование, долговременная укладка.</p>
+            <span class="proc__more" aria-hidden="true">Подробнее</span>
+          </summary>
+          <div class="proc__expand">
+            <p>Оформление бровей и ресниц в студии «Красивая Ты» в Раменском включает коррекцию формы, окрашивание бровей, ламинирование бровей и ресниц, а также долговременную укладку. Форма и оттенок подбираются индивидуально с учётом пропорций лица, цвета волос и пожеланий клиента. Процедуры помогают сделать брови более аккуратными, подчеркнуть естественную форму и придать взгляду выразительность без необходимости ежедневного сложного макияжа.</p>
+            <a class="proc__cta" href="price.html#cat-esthetic">Смотреть цены</a>
+          </div>
+        </details>
+        <details class="proc__card">
+          <summary class="proc__summary">
+            <span class="proc__num">07</span>
+            <h3 class="proc__name">Удаление татуажа и перманента</h3>
+            <p class="proc__text">Лазер и ремувер — бережное осветление старого пигмента.</p>
+            <span class="proc__more" aria-hidden="true">Подробнее</span>
+          </summary>
+          <div class="proc__expand">
+            <p>Удаление перманентного макияжа и татуажа в Раменском в студии «Красивая Ты» выполняется лазером или с помощью ремувера. Подходящий способ подбирается индивидуально в зависимости от цвета, насыщенности и глубины старого пигмента. Осветление перманента происходит постепенно, поэтому для достижения необходимого результата может потребоваться несколько процедур. Удаление или осветление старого пигмента также может быть этапом подготовки перед новым перманентным макияжем.</p>
+            <a class="proc__cta" href="price.html#cat-tattoo">Смотреть цены</a>
+          </div>
+        </details>
+        <details class="proc__card">
+          <summary class="proc__summary">
+            <span class="proc__num">08</span>
+            <h3 class="proc__name">Диагностика кожи</h3>
+            <p class="proc__text">Аппаратный анализ по 12 параметрам и персональный план ухода.</p>
+            <span class="proc__more" aria-hidden="true">Подробнее</span>
+          </summary>
+          <div class="proc__expand">
+            <p>Аппаратная диагностика кожи в студии «Красивая Ты» в Раменском позволяет подробнее оценить её текущее состояние и подобрать подходящий домашний и профессиональный уход. Анализ проводится по нескольким параметрам кожи и помогает обратить внимание на особенности, которые не всегда заметны визуально. По результатам диагностики специалист даёт рекомендации по уходу и помогает определить, какие косметологические процедуры могут подойти именно для текущего состояния кожи.</p>
+            <a class="proc__cta" href="#diagnostika">Узнать больше</a>
+          </div>
+        </details>
       </div>
 
       <a class="btn proc__all" href="price.html">Все процедуры и цены →</a>
@@ -311,21 +386,21 @@
         </div>
       </div>
       <div class="portfolio__track" tabindex="0" aria-label="Галерея работ мастеров">
-        <figure class="portfolio__slide"><img src="assets/images/17.jpg" alt="Перманентный макияж губ, плотный винный оттенок" loading="lazy"><figcaption>Перманентный макияж губ</figcaption></figure>
-        <figure class="portfolio__slide"><img src="assets/images/20.jpg" alt="Перманентный макияж век со стрелкой" loading="lazy"><figcaption>Перманентный макияж век</figcaption></figure>
-        <figure class="portfolio__slide"><img src="assets/images/25.jpg" alt="Маникюр: нюдовое покрытие с бликами" loading="lazy"><figcaption>Ногтевой сервис</figcaption></figure>
-        <figure class="portfolio__slide"><img src="assets/images/14.jpg" alt="Косметологическая процедура на теле" loading="lazy"><figcaption>Косметология тела</figcaption></figure>
-        <figure class="portfolio__slide"><img src="assets/images/11.jpg" alt="Перманентный макияж: межресничка" loading="lazy"><figcaption>Перманентный макияж: межресничка</figcaption></figure>
-        <figure class="portfolio__slide"><img src="assets/images/16.jpg" alt="Наращивание ногтей, французский маникюр" loading="lazy"><figcaption>Наращивание ногтей</figcaption></figure>
-        <figure class="portfolio__slide"><img src="assets/images/13.jpg" alt="Аппаратный массаж тела" loading="lazy"><figcaption>Аппаратный массаж</figcaption></figure>
-        <figure class="portfolio__slide"><img src="assets/images/10.jpg" alt="Перманентный макияж губ с эффектом блеска" loading="lazy"><figcaption>Перманентный макияж губ</figcaption></figure>
-        <figure class="portfolio__slide"><img src="assets/images/15.jpg" alt="Ламинирование ресниц" loading="lazy"><figcaption>Ламинирование ресниц</figcaption></figure>
-        <figure class="portfolio__slide"><img src="assets/images/24.jpg" alt="Лазерная эпиляция голеней: до и после" loading="lazy"><figcaption>Лазерная эпиляция</figcaption></figure>
-        <figure class="portfolio__slide"><img src="assets/images/28.jpg" alt="Перманентный макияж губ, естественный оттенок" loading="lazy"><figcaption>Перманентный макияж губ</figcaption></figure>
-        <figure class="portfolio__slide"><img src="assets/images/18.jpg" alt="Педикюр с чёрным покрытием" loading="lazy"><figcaption>Педикюр</figcaption></figure>
-        <figure class="portfolio__slide portfolio__slide--landscape"><img src="assets/images/30.jpg" alt="Коррекция фигуры: до и после курса" loading="lazy"><figcaption>Коррекция фигуры</figcaption></figure>
-        <figure class="portfolio__slide"><img src="assets/images/19.jpg" alt="Перманентный макияж губ в естественном розовом оттенке" loading="lazy"><figcaption>Перманентный макияж губ</figcaption></figure>
-        <figure class="portfolio__slide"><img src="assets/images/21.jpg" alt="Результат косметологической процедуры для кожи лица" loading="lazy"><figcaption>Косметология лица</figcaption></figure>
+        <figure class="portfolio__slide"><img src="assets/images/17.webp" alt="Перманентный макияж губ, плотный винный оттенок" loading="lazy" width="563" height="1000"><figcaption>Перманентный макияж губ</figcaption></figure>
+        <figure class="portfolio__slide"><img src="assets/images/20.webp" alt="Перманентный макияж век со стрелкой" loading="lazy" width="1000" height="1000"><figcaption>Перманентный макияж век</figcaption></figure>
+        <figure class="portfolio__slide"><img src="assets/images/25.webp" alt="Маникюр: нюдовое покрытие с бликами" loading="lazy" width="563" height="1000"><figcaption>Ногтевой сервис</figcaption></figure>
+        <figure class="portfolio__slide"><img src="assets/images/14.webp" alt="Косметологическая процедура на теле" loading="lazy" width="563" height="1000"><figcaption>Косметология тела</figcaption></figure>
+        <figure class="portfolio__slide"><img src="assets/images/11.webp" alt="Перманентный макияж: межресничка" loading="lazy" width="1000" height="784"><figcaption>Перманентный макияж: межресничка</figcaption></figure>
+        <figure class="portfolio__slide"><img src="assets/images/16.webp" alt="Наращивание ногтей, французский маникюр" loading="lazy" width="563" height="1000"><figcaption>Наращивание ногтей</figcaption></figure>
+        <figure class="portfolio__slide"><img src="assets/images/13.webp" alt="Аппаратный массаж тела" loading="lazy" width="563" height="1000"><figcaption>Аппаратный массаж</figcaption></figure>
+        <figure class="portfolio__slide"><img src="assets/images/10.webp" alt="Перманентный макияж губ с эффектом блеска" loading="lazy" width="474" height="842"><figcaption>Перманентный макияж губ</figcaption></figure>
+        <figure class="portfolio__slide"><img src="assets/images/15.webp" alt="Ламинирование ресниц" loading="lazy" width="736" height="966"><figcaption>Ламинирование ресниц</figcaption></figure>
+        <figure class="portfolio__slide"><img src="assets/images/24.webp" alt="Лазерная эпиляция голеней: до и после" loading="lazy" width="563" height="1000"><figcaption>Лазерная эпиляция</figcaption></figure>
+        <figure class="portfolio__slide"><img src="assets/images/28.webp" alt="Перманентный макияж губ, естественный оттенок" loading="lazy" width="784" height="1000"><figcaption>Перманентный макияж губ</figcaption></figure>
+        <figure class="portfolio__slide"><img src="assets/images/18.webp" alt="Педикюр с чёрным покрытием" loading="lazy" width="736" height="920"><figcaption>Педикюр</figcaption></figure>
+        <figure class="portfolio__slide portfolio__slide--landscape"><img src="assets/images/30.webp" alt="Коррекция фигуры: до и после курса" loading="lazy" width="838" height="857"><figcaption>Коррекция фигуры</figcaption></figure>
+        <figure class="portfolio__slide"><img src="assets/images/19.webp" alt="Перманентный макияж губ в естественном розовом оттенке" loading="lazy" width="736" height="920"><figcaption>Перманентный макияж губ</figcaption></figure>
+        <figure class="portfolio__slide"><img src="assets/images/21.webp" alt="Результат косметологической процедуры для кожи лица" loading="lazy" width="736" height="981"><figcaption>Косметология лица</figcaption></figure>
       </div>
     </div>
   </section>
@@ -388,22 +463,22 @@
 
       <div class="space__gallery" tabindex="0" aria-label="Фотографии студии">
       <figure class="shot shot--main">
-        <button class="studio-photo" type="button" data-full="assets/images/4.jpg" aria-label="Открыть фото главного зала">
-          <img src="assets/images/4.jpg" alt="Главный зал студии с витриной профессиональной косметики" loading="lazy" width="1280" height="853">
+        <button class="studio-photo" type="button" data-full="assets/images/4.webp" aria-label="Открыть фото главного зала">
+          <img src="assets/images/4.webp" alt="Главный зал студии с витриной профессиональной косметики" loading="lazy" width="1280" height="853">
         </button>
         <figcaption>Два уровня, кирпич и свет</figcaption>
       </figure>
 
       <figure class="shot shot--tall">
-        <button class="studio-photo" type="button" data-full="assets/images/3.jpg" aria-label="Открыть фото второго уровня">
-          <img src="assets/images/3.jpg" alt="Светлая зона мастеров на втором уровне студии «Красивая Ты», Раменское" loading="lazy">
+        <button class="studio-photo" type="button" data-full="assets/images/3.webp" aria-label="Открыть фото второго уровня">
+          <img src="assets/images/3.webp" alt="Светлая зона мастеров на втором уровне студии «Красивая Ты», Раменское" loading="lazy" width="1280" height="854">
         </button>
         <figcaption>Второй уровень студии</figcaption>
       </figure>
 
       <figure class="shot shot--sm">
-        <button class="studio-photo" type="button" data-full="assets/images/5.JPG" aria-label="Открыть фото главного зала">
-          <img src="assets/images/5.JPG" alt="Главный зал студии: ресепшен, витрина косметики и открытый второй уровень" loading="lazy" width="1280" height="853">
+        <button class="studio-photo" type="button" data-full="assets/images/5.webp" aria-label="Открыть фото главного зала">
+          <img src="assets/images/5.webp" alt="Главный зал студии: ресепшен, витрина косметики и открытый второй уровень" loading="lazy" width="1280" height="853">
         </button>
         <figcaption>Главный зал</figcaption>
       </figure>
@@ -430,7 +505,7 @@
                 <p class="eyebrow">Аппаратная диагностика кожи</p>
                 <h2 class="h2">Точно знать,<br><em>что нужно коже</em></h2>
                 <figure class="diag__figure">
-                  <img src="assets/diag.jpeg" alt="Аппаратная диагностика кожи лица на анализаторе ADSS 4D-SK" loading="lazy" width="864" height="1080">
+                  <img src="assets/diag.webp" alt="Аппаратная диагностика кожи лица на анализаторе ADSS 4D-SK" loading="lazy" width="864" height="1080">
                 </figure>
               </div>
 
@@ -464,7 +539,7 @@
                 <p class="eyebrow">Статья</p>
                 <h2 class="h2">9 из 10 женщин<br><em>ошибаются в уходе</em></h2>
                 <figure class="diag__figure diag__figure--wide">
-                  <img src="assets/statia.jpg" alt="9 из 10 женщин совершают одни и те же ошибки в уходе за кожей" loading="lazy" width="1280" height="825">
+                  <img src="assets/statia.webp" alt="9 из 10 женщин совершают одни и те же ошибки в уходе за кожей" loading="lazy" width="1280" height="825">
                 </figure>
               </div>
 
@@ -557,17 +632,17 @@
       </div>
 
       <div class="revs__track" tabindex="0" aria-label="Скриншоты отзывов гостей — нажмите, чтобы открыть">
-        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7539.jpg"><img src="assets/reviews/thumbs/IMG_7539-thumb.jpg" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
-        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7540.jpg"><img src="assets/reviews/thumbs/IMG_7540-thumb.jpg" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
-        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7541.jpg"><img src="assets/reviews/thumbs/IMG_7541-thumb.jpg" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
-        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7542.jpg"><img src="assets/reviews/thumbs/IMG_7542-thumb.jpg" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
-        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7543.jpg"><img src="assets/reviews/thumbs/IMG_7543-thumb.jpg" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
-        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7544.jpg"><img src="assets/reviews/thumbs/IMG_7544-thumb.jpg" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
-        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7545.jpg"><img src="assets/reviews/thumbs/IMG_7545-thumb.jpg" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
-        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7546.jpg"><img src="assets/reviews/thumbs/IMG_7546-thumb.jpg" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
-        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7547.jpg"><img src="assets/reviews/thumbs/IMG_7547-thumb.jpg" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
-        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7548.jpg"><img src="assets/reviews/thumbs/IMG_7548-thumb.jpg" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
-        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7549.jpg"><img src="assets/reviews/thumbs/IMG_7549-thumb.jpg" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
+        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7539.webp"><img src="assets/reviews/thumbs/IMG_7539-thumb.webp" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
+        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7540.webp"><img src="assets/reviews/thumbs/IMG_7540-thumb.webp" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
+        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7541.webp"><img src="assets/reviews/thumbs/IMG_7541-thumb.webp" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
+        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7542.webp"><img src="assets/reviews/thumbs/IMG_7542-thumb.webp" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
+        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7543.webp"><img src="assets/reviews/thumbs/IMG_7543-thumb.webp" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
+        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7544.webp"><img src="assets/reviews/thumbs/IMG_7544-thumb.webp" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
+        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7545.webp"><img src="assets/reviews/thumbs/IMG_7545-thumb.webp" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
+        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7546.webp"><img src="assets/reviews/thumbs/IMG_7546-thumb.webp" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
+        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7547.webp"><img src="assets/reviews/thumbs/IMG_7547-thumb.webp" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
+        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7548.webp"><img src="assets/reviews/thumbs/IMG_7548-thumb.webp" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
+        <button class="revs__item" type="button" data-full="assets/reviews/IMG_7549.webp"><img src="assets/reviews/thumbs/IMG_7549-thumb.webp" alt="Отзыв гостя студии «Красивая Ты»" loading="lazy"></button>
       </div>
 
       <div class="revs__actions">
@@ -586,7 +661,7 @@
     <div class="founder__grid">
       <figure class="founder__figure">
         <div class="founder__frame">
-          <img src="assets/images/natalia-optimized.jpg" alt="Наталья Манохина, основательница студии «Красивая Ты»" loading="lazy" width="1200" height="1803">
+          <img src="assets/images/natalia-optimized.webp" alt="Наталья Манохина, основательница студии «Красивая Ты»" loading="lazy" width="1200" height="1803">
         </div>
         <figcaption class="founder__tag">
           <b>Наталья Манохина</b>
@@ -675,6 +750,12 @@
             <button class="faq__question" id="faq-question-10" type="button" aria-expanded="true" aria-controls="faq-answer-10" aria-label="Есть ли противопоказания у косметологических процедур?"><span>Есть ли противопоказания?</span><span class="faq__icon" aria-hidden="true"></span></button>
             <div class="faq__answer" id="faq-answer-10" role="region" aria-labelledby="faq-question-10" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Да, у аппаратных, лазерных и других косметологических процедур могут быть противопоказания. Они зависят от конкретной методики, состояния кожи и общего состояния здоровья. Перед процедурой специалист уточняет важную информацию и при необходимости рекомендует выбрать другой метод или перенести процедуру.</p></div>
           </div>
+
+          <div class="faq__item faq__item--right" style="--faq-order: 11" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+            <meta itemprop="name" content="Как добраться до студии «Красивая Ты» в Раменском?">
+            <button class="faq__question" id="faq-question-11" type="button" aria-expanded="true" aria-controls="faq-answer-11" aria-label="Как добраться до студии «Красивая Ты» в Раменском?"><span>Как добраться до студии?</span><span class="faq__icon" aria-hidden="true"></span></button>
+            <div class="faq__answer" id="faq-answer-11" role="region" aria-labelledby="faq-question-11" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Студия находится в Раменском, на Высоковольтной улице, 22, в ЖК «Парк на Фабричной». Точный маршрут и парковку удобно уточнить по телефону или в <a href="https://wa.me/79651952277" target="_blank" rel="noopener">WhatsApp</a> перед визитом — также схема проезда есть в <a href="#contacts">разделе «Контакты»</a>.</p></div>
+          </div>
           </div>
         </div>
       </div>
@@ -745,8 +826,8 @@
       </div>
 
       <div class="map">
-        <iframe src="https://yandex.ru/map-widget/v1/?ll=38.202501%2C55.573735&amp;z=16&amp;mode=search&amp;oid=29792745953&amp;ol=biz"
-                title="Студия «Красивая Ты» на Яндекс Картах" loading="lazy" allowfullscreen></iframe>
+        <iframe data-src="https://yandex.ru/map-widget/v1/?ll=38.202501%2C55.573735&amp;z=16&amp;mode=search&amp;oid=29792745953&amp;ol=biz"
+                title="Студия «Красивая Ты» на Яндекс Картах" allowfullscreen></iframe>
         <a class="map__link" href="https://yandex.ru/maps/org/29792745953/" target="_blank" rel="noopener">Построить маршрут</a>
       </div>
     </div>
@@ -834,6 +915,19 @@
     window.addEventListener('load', schedule);
     if ('ResizeObserver' in window) new ResizeObserver(schedule).observe(document.querySelector('main'));
     update();
+  })();
+
+  (() => {
+    const frame = document.querySelector('.map iframe[data-src]');
+    if (!frame) return;
+    const load = () => { frame.src = frame.dataset.src; frame.removeAttribute('data-src'); };
+    if (!('IntersectionObserver' in window)) { load(); return; }
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { load(); io.disconnect(); }
+      });
+    }, { rootMargin: '1200px 0px' });
+    io.observe(frame);
   })();
   
   (() => {
@@ -1027,7 +1121,6 @@
         startX = event.clientX;
         startScroll = track.scrollLeft;
         track.classList.add('is-dragging');
-        track.setPointerCapture?.(event.pointerId);
       });
       window.addEventListener('pointermove', (event) => {
         if (!dragging) return;
@@ -1042,7 +1135,6 @@
         if (!dragging) return;
         dragging = false;
         track.classList.remove('is-dragging');
-        track.releasePointerCapture?.(event.pointerId);
       };
       window.addEventListener('pointerup', stop);
       window.addEventListener('pointercancel', stop);
@@ -1054,9 +1146,12 @@
 </script>
 <script>
   (() => {
-    const up = document.querySelector('.foot__up');
-    if (!up) return;
-    const update = () => up.classList.toggle('is-visible', window.scrollY > 120);
+    const targets = [...document.querySelectorAll('.foot__up, .fab, .totop')];
+    if (!targets.length) return;
+    const update = () => {
+      const visible = window.scrollY > 120;
+      targets.forEach((el) => el.classList.toggle('is-visible', visible));
+    };
     window.addEventListener('scroll', update, { passive: true });
     update();
   })();
