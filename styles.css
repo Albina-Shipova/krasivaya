@@ -1720,7 +1720,9 @@ details.proc__card[open] .proc__more::after { transform: rotate(45deg); }
     width: 19px; height: 1px; background: currentColor;
     transform: translateY(-50%);
   }
-  .proc__more::after {
+  .proc__more::after,
+  details.proc__card .proc__more::after,
+  details.proc__card[open] .proc__more::after {
     content: ""; position: absolute; right: 12px; top: 50%;
     width: 7px; height: 7px;
     border-top: 1px solid currentColor; border-right: 1px solid currentColor;
