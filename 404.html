@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Страница не найдена — «Красивая Ты»</title>
+  <meta name="description" content="Запрошенная страница не найдена. Вернитесь на главную страницу студии красоты «Красивая Ты».">
+  <meta name="robots" content="noindex, follow">
+  <meta name="theme-color" content="#232230">
+  <link rel="icon" href="/assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preload" href="/assets/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/oswald-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/fonts.css?v=1">
+  <link rel="stylesheet" href="/styles.css?v=31">
+  <style>
+    .not-found {
+      min-height: calc(100vh - 86px);
+      display: grid;
+      place-items: center;
+      padding: clamp(70px, 10vw, 140px) var(--pad);
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 77% 24%, rgba(237, 0, 16, .09), transparent 28%),
+        var(--paper);
+      color: var(--on-light);
+      text-align: center;
+    }
+    .not-found__inner { position: relative; width: min(760px, 100%); }
+    .not-found__code {
+      margin: 0;
+      color: rgba(165, 107, 121, .16);
+      font: 700 clamp(130px, 30vw, 300px)/.72 Oswald, sans-serif;
+      letter-spacing: -.06em;
+      user-select: none;
+    }
+    .not-found h1 {
+      margin: clamp(28px, 5vw, 46px) 0 18px;
+      font: 600 clamp(34px, 6vw, 64px)/1 Oswald, sans-serif;
+      text-transform: uppercase;
+    }
+    .not-found__text {
+      max-width: 520px;
+      margin: 0 auto;
+      color: var(--ash);
+      font-size: clamp(15px, 2vw, 18px);
+      line-height: 1.65;
+    }
+    .not-found__actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 34px;
+    }
+    @media (max-width: 620px) {
+      .not-found { min-height: calc(100vh - 72px); }
+      .not-found__actions { align-items: stretch; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+<a class="skip" href="#main">Перейти к содержанию</a>
+
+<header class="hdr" id="top">
+  <a class="brand" href="/" aria-label="Красивая Ты — на главную">
+    <img class="brand__logo" src="/assets/images/logo-header.svg" alt="Красивая Ты" width="1983" height="793">
+  </a>
+  <nav class="nav" aria-label="Основная навигация">
+    <a href="/#proc">Процедуры</a>
+    <a href="/price.html">Цены</a>
+    <a href="/#portfolio">Работы</a>
+    <a href="/#studio">Студия</a>
+    <a href="/#reviews">Отзывы</a>
+    <a href="/#contacts">Контакты</a>
+  </nav>
+  <div class="hdr__actions">
+    <a class="tel" href="tel:+79651952277"><span>+7 965 195-22-77</span></a>
+    <a class="btn btn--sm" href="https://n478417.yclients.com/" target="_blank" rel="noopener">Записаться</a>
+  </div>
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Меню">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="mnav" id="mobile-nav">
+    <a href="/#proc">Процедуры</a>
+    <a href="/price.html">Цены</a>
+    <a href="/#portfolio">Работы</a>
+    <a href="/#studio">Студия</a>
+    <a href="/#reviews">Отзывы</a>
+    <a href="/#contacts">Контакты</a>
+    <a class="mnav__tel" href="tel:+79651952277">+7 965 195-22-77</a>
+  </div>
+</header>
+
+<main class="not-found" id="main">
+  <div class="not-found__inner">
+    <p class="not-found__code" aria-hidden="true">404</p>
+    <p class="eyebrow eyebrow--dark">Кажется, вы свернули не туда</p>
+    <h1>Страница не найдена</h1>
+    <p class="not-found__text">Возможно, адрес изменился или в ссылке есть ошибка. Вернитесь на главную либо посмотрите актуальные услуги и цены.</p>
+    <div class="not-found__actions">
+      <a class="btn" href="/">На главную</a>
+      <a class="btn btn--line" href="/price.html">Посмотреть цены</a>
+    </div>
+  </div>
+</main>
+
+<script>
+  const header = document.querySelector('.hdr');
+  const toggle = document.querySelector('.nav-toggle');
+  toggle?.addEventListener('click', () => {
+    const open = toggle.getAttribute('aria-expanded') === 'true';
+    toggle.setAttribute('aria-expanded', String(!open));
+    header?.classList.toggle('is-open', !open);
+  });
+  header?.querySelectorAll('.mnav a').forEach((link) => link.addEventListener('click', () => {
+    toggle?.setAttribute('aria-expanded', 'false');
+    header.classList.remove('is-open');
+  }));
+</script>
+</body>
+</html>
