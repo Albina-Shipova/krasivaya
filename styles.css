@@ -1400,7 +1400,7 @@ details.proc__card[open] .proc__more::after { transform: rotate(45deg); }
   }
   .rv.h2,
   .rv.hero__title,
-  .rv.script            { transform: translate3d(0, 38px, 0); filter: blur(14px); }
+  .rv.script            { transform: translate3d(0, 38px, 0); }
   .rv.rv--rise,
   .rv.proc__card,
   .rv.shot,
@@ -1408,9 +1408,9 @@ details.proc__card[open] .proc__more::after { transform: rotate(45deg); }
   .rv.map,
   .rv.diag__figure      { transform: translate3d(0, 46px, 0) scale(.93); }
   .rv.founder__figure   { transform: translate3d(0, 48px, 0) scale(.94); }
-  .rv.rv--left          { transform: translate3d(-64px, 0, 0); filter: blur(4px); }
-  .rv.rv--right         { transform: translate3d(64px, 0, 0); filter: blur(4px); }
-  .rv.rv--soft          { transform: translate3d(0, 24px, 0); filter: blur(9px); }
+  .rv.rv--left          { transform: translate3d(-64px, 0, 0); }
+  .rv.rv--right         { transform: translate3d(64px, 0, 0); }
+  .rv.rv--soft          { transform: translate3d(0, 24px, 0); }
   .rv.portfolio__slide,
   .rv.revs__item,
   .rv.ticker            { transform: scale(.94); }
