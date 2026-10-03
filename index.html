@@ -136,7 +136,7 @@
     }
   }
   </script>
-  <script src="reveal.js?v=3" defer></script>
+  <script src="reveal.js?v=4" defer></script>
 </head>
 <body>
 
@@ -578,9 +578,9 @@
 
       <div class="diag__nav">
         <button class="diag__arrow diag__arrow--prev" type="button" aria-label="Предыдущий слайд">←</button>
-        <div class="diag__dots" role="tablist">
-          <button class="diag__dot is-active" type="button" aria-label="Диагностика кожи"></button>
-          <button class="diag__dot" type="button" aria-label="Статья об ошибках в уходе"></button>
+        <div class="diag__dots" role="tablist" aria-label="Слайды раздела">
+          <button class="diag__dot is-active" type="button" role="tab" aria-selected="true" aria-label="Диагностика кожи"></button>
+          <button class="diag__dot" type="button" role="tab" aria-selected="false" aria-label="Статья об ошибках в уходе"></button>
         </div>
         <button class="diag__arrow diag__arrow--next" type="button" aria-label="Следующий слайд">→</button>
       </div>
@@ -993,7 +993,11 @@
     dots.forEach((dot, i) => dot.addEventListener('click', () => go(i)));
     track.addEventListener('scroll', () => {
       const i = at();
-      dots.forEach((dot, j) => dot.classList.toggle('is-active', j === i));
+      dots.forEach((dot, j) => {
+        const active = j === i;
+        dot.classList.toggle('is-active', active);
+        dot.setAttribute('aria-selected', String(active));
+      });
     }, { passive: true });
   })();
 

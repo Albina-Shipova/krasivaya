@@ -59,8 +59,8 @@
     });
   });
 
-  // первое скрытие — без анимации, иначе при загрузке блоки успевают мигнуть
-  void document.body.offsetWidth;
+  // Первое скрытие снимаем после двух кадров: браузер успевает применить
+  // начальные классы без принудительного чтения layout (forced reflow).
   requestAnimationFrame(() => {
     requestAnimationFrame(() => els.forEach((el) => el.classList.remove('rv--instant')));
   });
